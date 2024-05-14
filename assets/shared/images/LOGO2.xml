@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="LOGO2.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bals loger instance 10000" x="11" y="11" width="999" height="559" frameX="-51" frameY="-151" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10001" x="1020" y="11" width="1035" height="607" frameX="-33" frameY="-127" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10002" x="2065" y="11" width="1100" height="682" frameX="0" frameY="-89" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10003" x="11" y="703" width="1072" height="735" frameX="-14" frameY="-63" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10004" x="1093" y="703" width="1017" height="815" frameX="-42" frameY="-23" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10005" x="2120" y="703" width="979" height="862" frameX="-61" frameY="0" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10006" x="3109" y="703" width="945" height="809" frameX="-78" frameY="-27" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10007" x="11" y="1575" width="873" height="759" frameX="-114" frameY="-52" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10008" x="894" y="1575" width="842" height="652" frameX="-130" frameY="-105" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10009" x="1746" y="1575" width="842" height="580" frameX="-130" frameY="-141" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10010" x="2598" y="1575" width="842" height="524" frameX="-130" frameY="-169" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10011" x="11" y="2344" width="791" height="480" frameX="-155" frameY="-191" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10012" x="812" y="2344" width="760" height="439" frameX="-171" frameY="-211" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10013" x="1582" y="2344" width="760" height="398" frameX="-171" frameY="-231" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10014" x="2352" y="2344" width="760" height="383" frameX="-171" frameY="-239" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10015" x="3122" y="2344" width="776" height="383" frameX="-163" frameY="-239" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10016" x="11" y="2834" width="807" height="420" frameX="-147" frameY="-220" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10017" x="828" y="2834" width="848" height="445" frameX="-127" frameY="-208" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10018" x="1686" y="2834" width="873" height="458" frameX="-114" frameY="-202" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10019" x="2569" y="2834" width="889" height="458" frameX="-106" frameY="-202" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10020" x="11" y="3302" width="889" height="467" frameX="-106" frameY="-197" frameWidth="1100" frameHeight="862"/>
+	<SubTexture name="bals loger instance 10021" x="11" y="3302" width="889" height="467" frameX="-106" frameY="-197" frameWidth="1100" frameHeight="862"/>
+</TextureAtlas>
