@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BEEF 3.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="beef down instance 10000" x="11" y="11" width="717" height="186" frameX="-17" frameY="-8" frameWidth="767" frameHeight="194"/>
+	<SubTexture name="beef down instance 10001" x="11" y="11" width="717" height="186" frameX="-17" frameY="-8" frameWidth="767" frameHeight="194"/>
+	<SubTexture name="beef down instance 10002" x="738" y="11" width="767" height="192" frameX="0" frameY="0" frameWidth="767" frameHeight="194"/>
+	<SubTexture name="beef down instance 10003" x="738" y="11" width="767" height="192" frameX="0" frameY="0" frameWidth="767" frameHeight="194"/>
+	<SubTexture name="beef left instance 10000" x="1515" y="11" width="1033" height="383" frameX="0" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10001" x="2558" y="11" width="713" height="383" frameX="-318" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10002" x="3281" y="11" width="748" height="383" frameX="-459" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10003" x="4039" y="11" width="878" height="383" frameX="-526" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10004" x="4927" y="11" width="943" height="383" frameX="-603" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10005" x="5880" y="11" width="902" height="383" frameX="-639" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10006" x="6792" y="11" width="869" height="383" frameX="-656" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10007" x="11" y="404" width="835" height="383" frameX="-680" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10008" x="856" y="404" width="785" height="383" frameX="-705" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10009" x="856" y="404" width="785" height="383" frameX="-696" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10010" x="1651" y="404" width="739" height="383" frameX="-710" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10011" x="2400" y="404" width="679" height="383" frameX="-720" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10012" x="3089" y="404" width="593" height="383" frameX="-748" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10013" x="3692" y="404" width="554" height="383" frameX="-738" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10014" x="4256" y="404" width="573" height="383" frameX="-706" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10015" x="4256" y="404" width="573" height="383" frameX="-696" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10016" x="4839" y="404" width="592" height="383" frameX="-678" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10017" x="5441" y="404" width="606" height="383" frameX="-666" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10018" x="6057" y="404" width="594" height="383" frameX="-667" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10019" x="6661" y="404" width="583" height="383" frameX="-667" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10020" x="7254" y="404" width="570" height="383" frameX="-664" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10021" x="7254" y="404" width="570" height="383" frameX="-657" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10022" x="11" y="797" width="556" height="383" frameX="-665" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10023" x="577" y="797" width="543" height="383" frameX="-664" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef left instance 10024" x="577" y="797" width="543" height="383" frameX="-664" frameY="0" frameWidth="1546" frameHeight="383"/>
+	<SubTexture name="beef right instance 10000" x="1130" y="797" width="687" height="383" frameX="-7" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10001" x="1827" y="797" width="652" height="383" frameX="-25" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10002" x="2489" y="797" width="622" height="383" frameX="-25" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10003" x="3121" y="797" width="548" height="383" frameX="-35" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10004" x="3679" y="797" width="560" height="383" frameX="-8" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10005" x="3679" y="797" width="560" height="383" frameX="0" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10006" x="4249" y="797" width="539" height="383" frameX="-10" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10007" x="4798" y="797" width="512" height="383" frameX="-18" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10008" x="5320" y="797" width="522" height="383" frameX="-13" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10009" x="5852" y="797" width="538" height="383" frameX="-10" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10010" x="5852" y="797" width="538" height="383" frameX="-13" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10011" x="6400" y="797" width="531" height="383" frameX="-17" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10012" x="6941" y="797" width="519" height="383" frameX="-23" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10013" x="7470" y="797" width="513" height="383" frameX="-26" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10014" x="11" y="1190" width="515" height="383" frameX="-25" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef right instance 10015" x="11" y="1190" width="515" height="383" frameX="-25" frameY="0" frameWidth="694" frameHeight="383"/>
+	<SubTexture name="beef up instance 10000" x="536" y="1190" width="415" height="490" frameX="-318" frameY="-66" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10001" x="961" y="1190" width="435" height="464" frameX="-308" frameY="-92" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10002" x="1406" y="1190" width="471" height="446" frameX="-290" frameY="-112" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10003" x="1887" y="1190" width="541" height="391" frameX="-255" frameY="-169" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10004" x="2438" y="1190" width="613" height="319" frameX="-219" frameY="-244" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10005" x="3061" y="1190" width="775" height="151" frameX="-138" frameY="-413" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10006" x="3846" y="1190" width="899" height="69" frameX="-76" frameY="-498" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10007" x="4755" y="1190" width="1004" height="41" frameX="-24" frameY="-527" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10008" x="5769" y="1190" width="1053" height="20" frameX="0" frameY="-546" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10009" x="5769" y="1190" width="1053" height="20" frameX="0" frameY="-546" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10010" x="5769" y="1190" width="1053" height="20" frameX="0" frameY="-546" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10011" x="6832" y="1190" width="1031" height="45" frameX="-11" frameY="-523" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10012" x="11" y="1690" width="968" height="90" frameX="-43" frameY="-478" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10013" x="989" y="1690" width="906" height="216" frameX="-74" frameY="-353" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10014" x="1905" y="1690" width="820" height="278" frameX="-117" frameY="-292" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10015" x="2735" y="1690" width="756" height="402" frameX="-149" frameY="-168" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10016" x="3501" y="1690" width="662" height="472" frameX="-196" frameY="-97" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10017" x="4173" y="1690" width="583" height="573" frameX="-236" frameY="0" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10018" x="4766" y="1690" width="611" height="522" frameX="-222" frameY="-50" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10019" x="5387" y="1690" width="651" height="499" frameX="-203" frameY="-74" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10020" x="6048" y="1690" width="675" height="467" frameX="-191" frameY="-106" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beef up instance 10021" x="6048" y="1690" width="675" height="467" frameX="-191" frameY="-106" frameWidth="1053" frameHeight="573"/>
+	<SubTexture name="beefidle instance 10000" x="6733" y="1690" width="677" height="357" frameX="-100" frameY="-45" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10001" x="7420" y="1690" width="720" height="397" frameX="-79" frameY="-25" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10002" x="11" y="2273" width="791" height="448" frameX="-44" frameY="0" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10003" x="812" y="2273" width="841" height="420" frameX="-19" frameY="-14" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10004" x="1663" y="2273" width="879" height="360" frameX="0" frameY="-44" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10005" x="2552" y="2273" width="791" height="302" frameX="-44" frameY="-73" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10006" x="3353" y="2273" width="718" height="213" frameX="-81" frameY="-117" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10007" x="4081" y="2273" width="624" height="173" frameX="-128" frameY="-138" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10008" x="4715" y="2273" width="564" height="196" frameX="-158" frameY="-126" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10009" x="5289" y="2273" width="473" height="233" frameX="-203" frameY="-108" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10010" x="5772" y="2273" width="430" height="246" frameX="-224" frameY="-101" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10011" x="6212" y="2273" width="392" height="281" frameX="-243" frameY="-83" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10012" x="6614" y="2273" width="392" height="307" frameX="-243" frameY="-71" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10013" x="7016" y="2273" width="422" height="309" frameX="-228" frameY="-69" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10014" x="7448" y="2273" width="528" height="337" frameX="-175" frameY="-56" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10015" x="11" y="2731" width="576" height="375" frameX="-151" frameY="-37" frameWidth="879" frameHeight="448"/>
+	<SubTexture name="beefidle instance 10016" x="597" y="2731" width="607" height="390" frameX="-136" frameY="-29" frameWidth="879" frameHeight="448"/>
+</TextureAtlas>

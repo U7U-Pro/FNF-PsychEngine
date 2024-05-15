@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="u7u.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="u7u down instance 10000" x="11" y="11" width="212" height="116"/>
+	<SubTexture name="u7u down instance 10001" x="11" y="11" width="212" height="116"/>
+	<SubTexture name="u7u down instance 10002" x="233" y="11" width="211" height="116" frameX="-1" frameY="0" frameWidth="212" frameHeight="116"/>
+	<SubTexture name="u7u down instance 10003" x="233" y="11" width="211" height="116" frameX="-1" frameY="0" frameWidth="212" frameHeight="116"/>
+	<SubTexture name="u7u idle instance 10000" x="454" y="11" width="136" height="209" frameX="-112" frameY="0" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10001" x="600" y="11" width="124" height="209" frameX="-114" frameY="-9" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10002" x="734" y="11" width="141" height="160" frameX="-99" frameY="-60" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10003" x="885" y="11" width="167" height="132" frameX="-78" frameY="-98" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10004" x="1062" y="11" width="183" height="106" frameX="-64" frameY="-126" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10005" x="1255" y="11" width="203" height="92" frameX="-51" frameY="-140" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10006" x="1468" y="11" width="188" height="106" frameX="-55" frameY="-133" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10007" x="1666" y="11" width="175" height="127" frameX="-56" frameY="-114" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10008" x="1851" y="11" width="162" height="151" frameX="-49" frameY="-80" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10009" x="11" y="230" width="162" height="152" frameX="-45" frameY="-68" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10010" x="183" y="230" width="144" height="180" frameX="-48" frameY="-37" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10011" x="337" y="230" width="144" height="180" frameX="-43" frameY="-37" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10012" x="491" y="230" width="145" height="178" frameX="-39" frameY="-37" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10013" x="646" y="230" width="145" height="177" frameX="-34" frameY="-47" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10014" x="801" y="230" width="158" height="159" frameX="-24" frameY="-65" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10015" x="969" y="230" width="171" height="144" frameX="-5" frameY="-92" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10016" x="1150" y="230" width="172" height="124" frameX="-2" frameY="-119" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10017" x="1150" y="230" width="172" height="124" frameX="-2" frameY="-119" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10018" x="1332" y="230" width="180" height="122" frameX="0" frameY="-121" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10019" x="1522" y="230" width="181" height="123" frameX="-8" frameY="-126" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10020" x="1713" y="230" width="169" height="136" frameX="-19" frameY="-114" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10021" x="11" y="420" width="148" height="156" frameX="-35" frameY="-91" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10022" x="169" y="420" width="147" height="156" frameX="-57" frameY="-75" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10023" x="326" y="420" width="128" height="176" frameX="-83" frameY="-52" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10024" x="464" y="420" width="129" height="176" frameX="-101" frameY="-38" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u idle instance 10025" x="603" y="420" width="118" height="198" frameX="-119" frameY="-22" frameWidth="254" frameHeight="250"/>
+	<SubTexture name="u7u left instance 10000" x="731" y="420" width="144" height="174" frameX="0" frameY="0" frameWidth="151" frameHeight="174"/>
+	<SubTexture name="u7u left instance 10001" x="731" y="420" width="144" height="174" frameX="0" frameY="0" frameWidth="151" frameHeight="174"/>
+	<SubTexture name="u7u left instance 10002" x="885" y="420" width="144" height="174" frameX="-7" frameY="0" frameWidth="151" frameHeight="174"/>
+	<SubTexture name="u7u left instance 10003" x="885" y="420" width="144" height="174" frameX="-7" frameY="0" frameWidth="151" frameHeight="174"/>
+	<SubTexture name="u7u right instance 10000" x="1039" y="420" width="175" height="138" frameX="0" frameY="0" frameWidth="198" frameHeight="138"/>
+	<SubTexture name="u7u right instance 10001" x="1039" y="420" width="175" height="138" frameX="0" frameY="0" frameWidth="198" frameHeight="138"/>
+	<SubTexture name="u7u right instance 10002" x="1224" y="420" width="174" height="115" frameX="-24" frameY="-22" frameWidth="198" frameHeight="138"/>
+	<SubTexture name="u7u right instance 10003" x="1224" y="420" width="174" height="115" frameX="-24" frameY="-22" frameWidth="198" frameHeight="138"/>
+	<SubTexture name="u7u up instance 10000" x="1408" y="420" width="120" height="189" frameX="-35" frameY="0" frameWidth="155" frameHeight="194"/>
+	<SubTexture name="u7u up instance 10001" x="1408" y="420" width="120" height="189" frameX="-35" frameY="0" frameWidth="155" frameHeight="194"/>
+	<SubTexture name="u7u up instance 10002" x="1538" y="420" width="142" height="194" frameX="0" frameY="0" frameWidth="155" frameHeight="194"/>
+	<SubTexture name="u7u up instance 10003" x="1538" y="420" width="142" height="194" frameX="0" frameY="0" frameWidth="155" frameHeight="194"/>
+</TextureAtlas>

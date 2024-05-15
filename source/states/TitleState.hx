@@ -21,7 +21,7 @@ import states.StoryMenuState;
 import states.OutdatedState;
 import states.MainMenuState;
 
-import Random;
+import flixel.FlxG;
 
 typedef TitleData =
 {
@@ -204,12 +204,12 @@ class TitleState extends MusicBeatState
 
 		
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
-		if (Random.int(1,100)>99){
+		if (FlxG.random.int(1,100)>99){
 			logoBl.frames = Paths.getSparrowAtlas('LOGO2');
-			logoBl.animation.addByPrefix('bump', 'bals loger instance1', 24, false);
+			logoBl.animation.addByPrefix('bump', 'bals loger instance 1', 24, false);
 		}else{
 			logoBl.frames = Paths.getSparrowAtlas('LOGO1');
-			logoBl.animation.addByPrefix('bump', 'ballsLogo instance1', 24, false);
+			logoBl.animation.addByPrefix('bump', 'ballsLogo instance 1', 24, false);
 		}
 		logoBl.antialiasing = ClientPrefs.data.antialiasing;
 
@@ -225,17 +225,14 @@ class TitleState extends MusicBeatState
 
 	
 
-		switch(easterEgg.toUpperCase())
-		{
-			
-			default:
-			//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
-			//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
-			//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
-				gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
-				gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-				gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-		}
+
+		//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
+		//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
+		//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
+		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
+		gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+	
 
 		add(gfDance);
 		add(logoBl);
