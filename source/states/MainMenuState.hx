@@ -18,7 +18,8 @@ class MainMenuState extends MusicBeatState
 		'story_mode',
 		'freeplay',
 		//'credits',
-		'options'
+		'options',
+		'hmm'
 	];
 
 	var magenta:FlxSprite;
@@ -123,12 +124,12 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				FlxG.sound.play(Paths.sound('confirmMenu'));
-				if (optionShit[curSelected] == 'donate')
-				{
-					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
+				if(optionShit[curSelected]=='hmm'){
+					FlxG.sound.play(Paths.sound('hmm'));
 				}
-				else
+				else{
+				FlxG.sound.play(Paths.sound('confirmMenu'));
+				
 				{
 					selectedSomethin = true;
 
@@ -181,6 +182,7 @@ class MainMenuState extends MusicBeatState
 						});
 					}
 				}
+			}
 			}
 			#if desktop
 			if (controls.justPressed('debug_1'))
