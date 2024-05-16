@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fartnumbers.png">
+	<!-- Created with Adobe Animate version 22.0.4.185 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="0 normal instance 10000" x="5" y="5" width="343" height="381"/>
+	<SubTexture name="1 normal instance 10000" x="567" y="373" width="152" height="343"/>
+	<SubTexture name="2 normal instance 10000" x="320" y="389" width="244" height="375"/>
+	<SubTexture name="3 normal instance 10000" x="5" y="1567" width="289" height="370"/>
+	<SubTexture name="4 normal instance 10000" x="317" y="809" width="291" height="336"/>
+	<SubTexture name="5 normal instance 10000" x="291" y="1182" width="282" height="374"/>
+	<SubTexture name="6 normal instance 10000" x="5" y="389" width="312" height="417"/>
+	<SubTexture name="7 normal instance 10000" x="5" y="1182" width="283" height="382"/>
+	<SubTexture name="8 normal instance 10000" x="5" y="809" width="309" height="370"/>
+	<SubTexture name="9 normal instance 10000" x="351" y="5" width="243" height="365"/>
+	<SubTexture name=": normal instance 10000" x="597" y="5" width="88" height="297"/>
+</TextureAtlas>

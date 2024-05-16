@@ -1,0 +1,25 @@
+{
+	"songs": [
+		["beeftastic", "beef", [146, 113, 253]],
+		["beating-my-beef", "beef", [146, 113, 253]],
+		["mark", "beef", [146, 113, 253]],
+		["deck", "beef", [146, 113, 253]],
+		["beefkill", "beef", [146, 113, 253]]
+		
+	],
+
+	"weekCharacters": [
+		"beef",
+		"u7u",
+		""
+	],
+	"weekBackground": "beef",
+
+	"storyName": "BEEF           3",
+	"weekBefore": "tutorial",
+	"weekName": "Beef 3",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

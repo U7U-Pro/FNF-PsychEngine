@@ -10,6 +10,7 @@ enum Alignment
 class Alphabet extends FlxSpriteGroup
 {
 	public var text(default, set):String;
+	public var font:String = '';
 
 	public var bold:Bool = false;
 	public var letters:Array<AlphaCharacter> = [];
@@ -27,15 +28,16 @@ class Alphabet extends FlxSpriteGroup
 	public var distancePerItem:FlxPoint = new FlxPoint(20, 120);
 	public var startPosition:FlxPoint = new FlxPoint(0, 0); //for the calculations
 
-	public function new(x:Float, y:Float, text:String = "", ?bold:Bool = true)
-	{
-		super(x, y);
-
-		this.startPosition.x = x;
-		this.startPosition.y = y;
-		this.bold = bold;
-		this.text = text;
-	}
+	public function new(x:Float, y:Float, text:String = "", ?bold:Bool = true, ?font:String = 'alphabet')
+		{
+			super(x, y);
+	
+			this.startPosition.x = x;
+			this.startPosition.y = y;
+			this.bold = bold;
+			this.font = font;
+			this.text = text;
+		}
 
 	public function setAlignmentFromString(align:String)
 	{
@@ -219,6 +221,7 @@ class Alphabet extends FlxSpriteGroup
 					letter.scale.x = scaleX;
 					letter.scale.y = scaleY;
 					letter.rowWidth = 0;
+					letter.image = font;
 
 					letter.setupAlphaCharacter(xPos, rows * Y_PER_ROW * scale.y, character, bold);
 					@:privateAccess letter.parent = this;
@@ -345,7 +348,7 @@ class AlphaCharacter extends FlxSprite
 	public function new()
 	{
 		super(x, y);
-		image = 'alphabet';
+		//image = 'alphabet';
 		antialiasing = ClientPrefs.data.antialiasing;
 	}
 	
