@@ -1,10 +1,10 @@
 {
-	"directory": "",
-	"defaultZoom": 0.45,
+	"directory": "beef3",
+	"defaultZoom": 0.6,
 	"isPixelStage": false,
 
 	"boyfriend": [1334, 350],
 	"girlfriend": [400, 130],
 	"opponent": [-170, 476],
-	"hide_girlfriend": false
+	"hide_girlfriend": true
 }

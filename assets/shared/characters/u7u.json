@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": true,
 			"offsets": [
 				0,
 				140
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": true,
-			"name": "u7u idle"
-		},
-		{
-			"offsets": [
-				26,
-				73
-			],
-			"indices": [],
 			"fps": 24,
-			"anim": "singLEFT",
+			"name": "u7u idle",
+			"indices": []
+		},
+		{
 			"loop": false,
-			"name": "u7u left"
+			"offsets": [
+				-54,
+				83
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "u7u left",
+			"indices": []
 		},
 		{
 			"offsets": [
-				-65,
-				94
+				-105,
+				124
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "singUP",
-			"loop": true,
+			"loop": false,
 			"name": "u7u up"
 		},
 		{
 			"offsets": [
-				-35,
+				-140,
+				57
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "u7u right"
+		},
+		{
+			"offsets": [
+				-138,
 				-10
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "singDOWN",
-			"loop": true,
+			"loop": false,
 			"name": "u7u down"
-		},
-		{
-			"offsets": [
-				-170,
-				47
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
-			"loop": true,
-			"name": "u7u right"
 		}
 	],
 	"vocals_file": "",
@@ -71,8 +71,8 @@
 		206
 	],
 	"camera_position": [
-		-10,
-		5
+		-30,
+		-40
 	],
 	"sing_duration": 6.1,
 	"scale": 1.1,
