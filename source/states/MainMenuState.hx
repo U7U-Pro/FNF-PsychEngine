@@ -70,7 +70,7 @@ class MainMenuState extends MusicBeatState
 		for (i in 0...optionShit.length)
 		{
 			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite(0, (i * 140) + offset);
+			var menuItem:FlxSprite = new FlxSprite((i * 140) + offset, 0);
 			menuItem.antialiasing = ClientPrefs.data.antialiasing;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
@@ -82,9 +82,9 @@ class MainMenuState extends MusicBeatState
 				scr = 0;
 			menuItem.scrollFactor.set(0, scr);
 			menuItem.updateHitbox();
-			menuItem.screenCenter(X);
+			menuItem.screenCenter(Y);
 		}
-
+		
 		var fnfVer:FlxText = new FlxText(12, FlxG.height - 38, 0, "BEEF              3", 24);
 		fnfVer.scrollFactor.set();
 		fnfVer.setFormat("MingLiu", 30, FlxColor.BLACK, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.PURPLE);
@@ -109,10 +109,10 @@ class MainMenuState extends MusicBeatState
 
 		if (!selectedSomethin)
 		{
-			if (controls.UI_UP_P)
+			if (controls.UI_LEFT_P)
 				changeItem(-1);
 
-			if (controls.UI_DOWN_P)
+			if (controls.UI_RIGHT_P)
 				changeItem(1);
 
 			if (controls.BACK)
@@ -126,15 +126,14 @@ class MainMenuState extends MusicBeatState
 			{
 				if(optionShit[curSelected]=='hmm'){
 					FlxG.sound.play(Paths.sound('hmm'));
+					menuItems.members[3].animation.addByPrefix('play', 'hmm yeah',24);
+					menuItems.members[3].animation.play('play');
 				}
 				else{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 				
 				{
 					selectedSomethin = true;
-
-					if (ClientPrefs.data.flashing)
-						FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 
 					FlxFlicker.flicker(menuItems.members[curSelected], 1, 0.06, false, false, function(flick:FlxFlicker)
 					{
@@ -144,19 +143,6 @@ class MainMenuState extends MusicBeatState
 								MusicBeatState.switchState(new StoryMenuState());
 							case 'freeplay':
 								MusicBeatState.switchState(new FreeplayState());
-
-							#if MODS_ALLOWED
-							case 'mods':
-								MusicBeatState.switchState(new ModsMenuState());
-							#end
-
-							#if ACHIEVEMENTS_ALLOWED
-							case 'awards':
-								MusicBeatState.switchState(new AchievementsMenuState());
-							#end
-
-							case 'credits':
-								MusicBeatState.switchState(new CreditsState());
 							case 'options':
 								MusicBeatState.switchState(new OptionsState());
 								OptionsState.onPlayState = false;
@@ -201,7 +187,7 @@ class MainMenuState extends MusicBeatState
 		FlxG.sound.play(Paths.sound('scrollMenu'));
 		menuItems.members[curSelected].animation.play('idle');
 		menuItems.members[curSelected].updateHitbox();
-		menuItems.members[curSelected].screenCenter(X);
+		menuItems.members[curSelected].screenCenter(Y);
 
 		curSelected += huh;
 
@@ -212,7 +198,7 @@ class MainMenuState extends MusicBeatState
 
 		menuItems.members[curSelected].animation.play('selected');
 		menuItems.members[curSelected].centerOffsets();
-		menuItems.members[curSelected].screenCenter(X);
+		menuItems.members[curSelected].screenCenter(Y);
 
 		camFollow.setPosition(menuItems.members[curSelected].getGraphicMidpoint().x,
 			menuItems.members[curSelected].getGraphicMidpoint().y - (menuItems.length > 4 ? menuItems.length * 8 : 0));
