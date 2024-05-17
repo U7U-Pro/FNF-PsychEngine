@@ -31,6 +31,7 @@ class PauseSubState extends MusicBeatSubstate
 	var missingText:FlxText;
 
 	public static var songName:String = null;
+	var pauseSong:String;
 
 	override function create()
 	{
@@ -62,7 +63,11 @@ class PauseSubState extends MusicBeatSubstate
 		pauseMusic = new FlxSound();
 		try
 		{
-			var pauseSong:String = Paths.formatToSongPath("slurpyslurp");
+			if(FlxG.random.int(1,2)>1){
+				var pauseSong:String = Paths.formatToSongPath("slurpyslurp");
+			}else{
+				var pauseSong:String = Paths.formatToSongPath("slurpyslurper");
+			}
 			if(pauseSong != null) pauseMusic.loadEmbedded(Paths.music(pauseSong), true, true);
 		}
 		catch(e:Dynamic) {}

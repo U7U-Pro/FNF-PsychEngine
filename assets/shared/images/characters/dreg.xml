@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dreg.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dreg idle0000" x="11" y="11" width="618" height="475" frameX="0" frameY="-74" frameWidth="618" frameHeight="549"/>
+	<SubTexture name="dreg idle0001" x="639" y="11" width="618" height="475" frameX="0" frameY="-74" frameWidth="618" frameHeight="549"/>
+	<SubTexture name="dreg idle0002" x="1267" y="11" width="512" height="512" frameX="-53" frameY="-37" frameWidth="618" frameHeight="549"/>
+	<SubTexture name="dreg idle0003" x="1789" y="11" width="458" height="549" frameX="-80" frameY="0" frameWidth="618" frameHeight="549"/>
+	<SubTexture name="dreg idle0004" x="2257" y="11" width="458" height="549" frameX="-80" frameY="0" frameWidth="618" frameHeight="549"/>
+	<SubTexture name="dreg idle0005" x="2725" y="11" width="512" height="512" frameX="-53" frameY="-37" frameWidth="618" frameHeight="549"/>
+	<SubTexture name="dreg idle0006" x="3247" y="11" width="512" height="512" frameX="-53" frameY="-37" frameWidth="618" frameHeight="549"/>
+	<SubTexture name="dreg singDOWN0000" x="11" y="570" width="671" height="618" frameX="0" frameY="-27" frameWidth="671" frameHeight="649"/>
+	<SubTexture name="dreg singDOWN0001" x="692" y="570" width="671" height="618" frameX="0" frameY="-27" frameWidth="671" frameHeight="649"/>
+	<SubTexture name="dreg singDOWN0002" x="1373" y="570" width="649" height="649" frameX="-11" frameY="0" frameWidth="671" frameHeight="649"/>
+	<SubTexture name="dreg singDOWN0003" x="2032" y="570" width="649" height="649" frameX="-11" frameY="0" frameWidth="671" frameHeight="649"/>
+	<SubTexture name="dreg singLEFT0000" x="2691" y="570" width="526" height="512" frameX="0" frameY="0" frameWidth="528" frameHeight="512"/>
+	<SubTexture name="dreg singLEFT0001" x="3227" y="570" width="526" height="512" frameX="0" frameY="0" frameWidth="528" frameHeight="512"/>
+	<SubTexture name="dreg singLEFT0002" x="11" y="1229" width="512" height="512" frameX="-16" frameY="0" frameWidth="528" frameHeight="512"/>
+	<SubTexture name="dreg singLEFT0003" x="533" y="1229" width="512" height="512" frameX="-16" frameY="0" frameWidth="528" frameHeight="512"/>
+	<SubTexture name="dreg singRIGHT0000" x="1055" y="1229" width="525" height="512"/>
+	<SubTexture name="dreg singRIGHT0001" x="1590" y="1229" width="525" height="512"/>
+	<SubTexture name="dreg singRIGHT0002" x="2125" y="1229" width="512" height="512" frameX="0" frameY="0" frameWidth="525" frameHeight="512"/>
+	<SubTexture name="dreg singRIGHT0003" x="2647" y="1229" width="512" height="512" frameX="0" frameY="0" frameWidth="525" frameHeight="512"/>
+	<SubTexture name="dreg singUP0000" x="3169" y="1229" width="464" height="545" frameX="-24" frameY="0" frameWidth="512" frameHeight="545"/>
+	<SubTexture name="dreg singUP0001" x="11" y="1784" width="464" height="545" frameX="-24" frameY="0" frameWidth="512" frameHeight="545"/>
+	<SubTexture name="dreg singUP0002" x="485" y="1784" width="512" height="512" frameX="0" frameY="-31" frameWidth="512" frameHeight="545"/>
+	<SubTexture name="dreg singUP0003" x="1007" y="1784" width="512" height="512" frameX="0" frameY="-31" frameWidth="512" frameHeight="545"/>
+</TextureAtlas>

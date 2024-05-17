@@ -91,9 +91,9 @@ class MainMenuState extends MusicBeatState
 			menuItem.screenCenter(Y);
 		}
 		
-		var fnfVer:FlxText = new FlxText(12, FlxG.height - 38, 0, "BEEF              3", 24);
+		var fnfVer:FlxText = new FlxText(12, FlxG.height - 58, 0, "BEEF              3", 24);
 		fnfVer.scrollFactor.set();
-		fnfVer.setFormat("MingLiu", 30, FlxColor.BLACK, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.PURPLE);
+		fnfVer.setFormat("MingLiu", 50, FlxColor.BLACK, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.PURPLE);
 		add(fnfVer);
 		changeItem();
 
@@ -140,7 +140,7 @@ class MainMenuState extends MusicBeatState
 				
 				{
 					selectedSomethin = true;
-
+					
 					FlxTween.tween(menuItems.members[curSelected], {"scale.x":30, "scale.y":30, x:640}, 1, {type: ONESHOT});
 					{
 						switch (optionShit[curSelected])

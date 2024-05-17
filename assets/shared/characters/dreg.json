@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				260,
+				359
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "dreg idle"
+		},
+		{
+			"offsets": [
+				226,
+				325
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "dreg singLEFT"
+		},
+		{
+			"offsets": [
+				275,
+				450
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "dreg singDOWN"
+		},
+		{
+			"offsets": [
+				225,
+				343
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "dreg singUP"
+		},
+		{
+			"offsets": [
+				56,
+				316
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "dreg singRIGHT"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/dreg",
+	"position": [
+		190,
+		540
+	],
+	"healthicon": "dad",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		-430,
+		-385
+	],
+	"sing_duration": 6.1,
+	"scale": 1.1,
+	"_editor_isPlayer": false
+}

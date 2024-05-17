@@ -201,11 +201,11 @@ class ChartingState extends MusicBeatState
 				events: [],
 				bpm: 150.0,
 				needsVoices: true,
-				player1: 'bf',
-				player2: 'dad',
-				gfVersion: 'gf',
+				player1: 'u7u',
+				player2: 'beef',
+				gfVersion: '',
 				speed: 1,
-				stage: 'stage'
+				stage: 'beef'
 			};
 			addSection();
 			PlayState.SONG = _song;
