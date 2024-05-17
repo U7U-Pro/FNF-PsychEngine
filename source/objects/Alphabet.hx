@@ -199,7 +199,7 @@ class Alphabet extends FlxSpriteGroup
 			
 			if(character != '\n')
 			{
-				var spaceChar:Bool = (character == " " || (bold && character == "_"));
+				var spaceChar:Bool = (character == " ");
 				if (spaceChar) consecutiveSpaces++;
 
 				var isAlphabet:Bool = AlphaCharacter.isTypeAlphabet(character.toLowerCase());

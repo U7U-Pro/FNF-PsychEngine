@@ -1,10 +1,10 @@
 {
 	"songs": [
-		["part-timer", "beef", [146, 113, 253]],
-		["beating-my-beef", "beef", [146, 113, 253]],
-		["mark", "beef", [146, 113, 253]],
-		["deck", "beef", [146, 113, 253]],
-		["beefkill", "beef", [146, 113, 253]]
+		["part-timer", "part-timer", [146, 113, 253]],
+		["beating-my-beef", "beating-my-beef", [146, 113, 253]],
+		["mark", "mark", [146, 113, 253]],
+		["deck", "deck", [146, 113, 253]],
+		["stain", "stain", [146, 113, 253]]
 		
 	],
 
@@ -16,8 +16,8 @@
 	"weekBackground": "beef",
 
 	"storyName": "BEEF           3",
-	"weekBefore": "tutorial",
-	"weekName": "Beef 3",
+	"weekBefore": "beef3",
+	"weekName": "beef3",
 	"startUnlocked": true,
 
 	"hideStoryMode": false,

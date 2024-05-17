@@ -1,5 +1,6 @@
 package states;
 
+import openfl.display.Screen;
 import flixel.FlxObject;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.effects.FlxFlicker;
@@ -42,26 +43,31 @@ class MainMenuState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(-80);
+		if(FlxG.random.int(1,10)>4){
+			bg.loadGraphic(Paths.image('menub'));
+		}else{
+			bg.loadGraphic(Paths.image('slop'));
+		}
 		bg.antialiasing = ClientPrefs.data.antialiasing;
-		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
 		bg.screenCenter();
 		add(bg);
-
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+		magenta = new FlxSprite(-80);
+		if(FlxG.random.int(1,10)>3){
+			magenta.loadGraphic(Paths.image('menub2'));
+		}else{
+			magenta.loadGraphic(Paths.image('slop2'));
+		}
 		magenta.antialiasing = ClientPrefs.data.antialiasing;
-		magenta.scrollFactor.set(0, yScroll);
 		magenta.setGraphicSize(Std.int(magenta.width * 1.175));
 		magenta.updateHitbox();
 		magenta.screenCenter();
 		magenta.visible = false;
-		magenta.color = 0xFFfd719b;
 		add(magenta);
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
@@ -69,8 +75,8 @@ class MainMenuState extends MusicBeatState
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite((i * 140) + offset, 0);
+			var offset:Float = 350;
+			var menuItem:FlxSprite = new FlxSprite((i * 170) + offset, 0);
 			menuItem.antialiasing = ClientPrefs.data.antialiasing;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
@@ -135,7 +141,7 @@ class MainMenuState extends MusicBeatState
 				{
 					selectedSomethin = true;
 
-					FlxFlicker.flicker(menuItems.members[curSelected], 1, 0.06, false, false, function(flick:FlxFlicker)
+					FlxTween.tween(menuItems.members[curSelected], {"scale.x":30, "scale.y":30, x:640}, 1, {type: ONESHOT});
 					{
 						switch (optionShit[curSelected])
 						{
@@ -153,7 +159,7 @@ class MainMenuState extends MusicBeatState
 									PlayState.stageUI = 'normal';
 								}
 						}
-					});
+					};
 
 					for (i in 0...menuItems.members.length)
 					{
@@ -200,7 +206,8 @@ class MainMenuState extends MusicBeatState
 		menuItems.members[curSelected].centerOffsets();
 		menuItems.members[curSelected].screenCenter(Y);
 
-		camFollow.setPosition(menuItems.members[curSelected].getGraphicMidpoint().x,
-			menuItems.members[curSelected].getGraphicMidpoint().y - (menuItems.length > 4 ? menuItems.length * 8 : 0));
+		camFollow.screenCenter();
+		/*camFollow.setPosition(menuItems.members[curSelected].getGraphicMidpoint().x,
+			menuItems.members[curSelected].getGraphicMidpoint().y - (menuItems.length > 4 ? menuItems.length * 8 : 0));*/
 	}
 }
