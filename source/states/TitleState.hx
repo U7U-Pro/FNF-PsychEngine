@@ -300,10 +300,10 @@ class TitleState extends MusicBeatState
 			}
 		}
 
-		if (initialized && pressedEnter && !skippedIntro)
+		/*if (initialized && pressedEnter && !skippedIntro)
 		{
 			skipIntro();
-		}
+		}*/
 
 		if(swagShader != null)
 		{

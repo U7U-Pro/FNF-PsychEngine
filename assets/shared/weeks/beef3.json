@@ -1,16 +1,16 @@
 {
 	"songs": [
+		["deck", "deck", [146, 113, 253]],		
+		["dreg", "beating-my-beef", [146, 113, 253]],
 		["part-timer", "part-timer", [146, 113, 253]],
-		["beating-my-beef", "beating-my-beef", [146, 113, 253]],
 		["mark", "mark", [146, 113, 253]],
-		["deck", "deck", [146, 113, 253]],
 		["stain", "stain", [146, 113, 253]]
 		
 	],
 
 	"weekCharacters": [
-		"beef",
-		"u7u",
+		"",
+		"",
 		""
 	],
 	"weekBackground": "beef",

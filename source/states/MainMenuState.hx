@@ -1,5 +1,8 @@
 package states;
 
+import backend.WeekData;
+import backend.Song;
+
 import openfl.display.Screen;
 import flixel.FlxObject;
 import flixel.addons.transition.FlxTransitionableState;
@@ -146,7 +149,22 @@ class MainMenuState extends MusicBeatState
 						switch (optionShit[curSelected])
 						{
 							case 'story_mode':
-								MusicBeatState.switchState(new StoryMenuState());
+
+								try{
+									PlayState.storyPlaylist = ["deck", "dreg", "part-timer", "mark", "stain"];
+									PlayState.isStoryMode = true;
+							
+									PlayState.SONG = Song.loadFromJson("deck", "deck");
+								}catch(e:Dynamic){
+									trace('ERROR! $e');
+									return;
+								}
+								new FlxTimer().start(1, function(tmr:FlxTimer)
+									{
+										LoadingState.loadAndSwitchState(new PlayState(), true);
+										FreeplayState.destroyFreeplayVocals();
+									});
+								MusicBeatState.switchState(new PlayState());
 							case 'freeplay':
 								MusicBeatState.switchState(new FreeplayState());
 							case 'options':
