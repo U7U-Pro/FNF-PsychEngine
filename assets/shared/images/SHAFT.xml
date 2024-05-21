@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SHAFT.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sheft instance 10000" x="11" y="11" width="163" height="437" frameX="0" frameY="-78" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10001" x="11" y="11" width="163" height="437" frameX="0" frameY="-74" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10002" x="11" y="11" width="163" height="437" frameX="0" frameY="-71" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10003" x="11" y="11" width="163" height="437" frameX="0" frameY="-68" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10004" x="11" y="11" width="163" height="437" frameX="0" frameY="-64" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10005" x="11" y="11" width="163" height="437" frameX="0" frameY="-61" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10006" x="11" y="11" width="163" height="437" frameX="0" frameY="-57" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10007" x="11" y="11" width="163" height="437" frameX="0" frameY="-54" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10008" x="11" y="11" width="163" height="437" frameX="0" frameY="-51" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10009" x="11" y="11" width="163" height="437" frameX="0" frameY="-47" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10010" x="11" y="11" width="163" height="437" frameX="0" frameY="-44" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10011" x="11" y="11" width="163" height="437" frameX="0" frameY="-40" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10012" x="11" y="11" width="163" height="437" frameX="0" frameY="-37" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10013" x="11" y="11" width="163" height="437" frameX="0" frameY="-34" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10014" x="11" y="11" width="163" height="437" frameX="0" frameY="-30" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10015" x="11" y="11" width="163" height="437" frameX="0" frameY="-27" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10016" x="11" y="11" width="163" height="437" frameX="0" frameY="-23" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10017" x="11" y="11" width="163" height="437" frameX="0" frameY="-20" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10018" x="11" y="11" width="163" height="437" frameX="0" frameY="-17" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10019" x="11" y="11" width="163" height="437" frameX="0" frameY="-13" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10020" x="11" y="11" width="163" height="437" frameX="0" frameY="-10" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10021" x="11" y="11" width="163" height="437" frameX="0" frameY="-7" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10022" x="11" y="11" width="163" height="437" frameX="0" frameY="-3" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10023" x="184" y="11" width="163" height="437" frameX="0" frameY="0" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10024" x="357" y="11" width="163" height="437" frameX="0" frameY="-3" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10025" x="357" y="11" width="163" height="437" frameX="0" frameY="-6" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10026" x="357" y="11" width="163" height="437" frameX="0" frameY="-9" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10027" x="357" y="11" width="163" height="437" frameX="0" frameY="-12" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10028" x="357" y="11" width="163" height="437" frameX="0" frameY="-15" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10029" x="357" y="11" width="163" height="437" frameX="0" frameY="-18" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10030" x="357" y="11" width="163" height="437" frameX="0" frameY="-21" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10031" x="357" y="11" width="163" height="437" frameX="0" frameY="-24" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10032" x="357" y="11" width="163" height="437" frameX="0" frameY="-27" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10033" x="357" y="11" width="163" height="437" frameX="0" frameY="-30" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10034" x="357" y="11" width="163" height="437" frameX="0" frameY="-33" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10035" x="357" y="11" width="163" height="437" frameX="0" frameY="-36" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10036" x="357" y="11" width="163" height="437" frameX="0" frameY="-39" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10037" x="357" y="11" width="163" height="437" frameX="0" frameY="-42" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10038" x="357" y="11" width="163" height="437" frameX="0" frameY="-45" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10039" x="357" y="11" width="163" height="437" frameX="0" frameY="-48" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10040" x="357" y="11" width="163" height="437" frameX="0" frameY="-51" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10041" x="357" y="11" width="163" height="437" frameX="0" frameY="-54" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10042" x="357" y="11" width="163" height="437" frameX="0" frameY="-57" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10043" x="357" y="11" width="163" height="437" frameX="0" frameY="-60" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10044" x="357" y="11" width="163" height="437" frameX="0" frameY="-63" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10045" x="357" y="11" width="163" height="437" frameX="0" frameY="-66" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10046" x="357" y="11" width="163" height="437" frameX="0" frameY="-69" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10047" x="357" y="11" width="163" height="437" frameX="0" frameY="-72" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10048" x="357" y="11" width="163" height="437" frameX="0" frameY="-75" frameWidth="163" frameHeight="515"/>
+	<SubTexture name="sheft instance 10049" x="11" y="11" width="163" height="437" frameX="0" frameY="-78" frameWidth="163" frameHeight="515"/>
+</TextureAtlas>

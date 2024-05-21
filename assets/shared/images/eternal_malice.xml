@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="eternal malice.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sun instance 10000" x="11" y="11" width="177" height="161"/>
+	<SubTexture name="sun instance 10001" x="11" y="11" width="177" height="161"/>
+	<SubTexture name="sun instance 10002" x="198" y="11" width="175" height="160" frameX="-1" frameY="0" frameWidth="177" frameHeight="161"/>
+	<SubTexture name="sun instance 10003" x="198" y="11" width="175" height="160" frameX="-1" frameY="0" frameWidth="177" frameHeight="161"/>
+</TextureAtlas>
