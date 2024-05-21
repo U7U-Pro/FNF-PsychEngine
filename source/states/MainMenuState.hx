@@ -151,16 +151,17 @@ class MainMenuState extends MusicBeatState
 							case 'story_mode':
 
 								try{
-									PlayState.storyPlaylist = ["deck", "dreg", "part-timer", "mark", "stain"];
+									PlayState.storyPlaylist = ["beef", "dreg", "part-timer", "mark", "stain"];
 									PlayState.isStoryMode = true;
-							
-									PlayState.SONG = Song.loadFromJson("deck", "deck");
+									WeekData.setDirectoryFromWeek(WeekData.weeksLoaded.get(WeekData.weeksList[0]));
+									PlayState.SONG = Song.loadFromJson("beef", "beef");
 								}catch(e:Dynamic){
 									trace('ERROR! $e');
 									return;
 								}
 								new FlxTimer().start(1, function(tmr:FlxTimer)
 									{
+										
 										LoadingState.loadAndSwitchState(new PlayState(), true);
 										FreeplayState.destroyFreeplayVocals();
 									});
