@@ -1,0 +1,10 @@
+{
+	"directory": "aidspd",
+	"defaultZoom": 0.75,
+	"isPixelStage": false,
+
+	"boyfriend": [890, 109],
+	"girlfriend": [400, 130],
+	"opponent": [-426, 191],
+	"hide_girlfriend": true
+}

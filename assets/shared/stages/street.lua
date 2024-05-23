@@ -33,5 +33,16 @@ function onCreate()
 	setObjectOrder('obj9', 6)
 	scaleObject('obj9', 1.7, 1.7)
 	addLuaSprite('obj9', true)
+
+	makeAnimatedLuaSprite('frontpeeps', 'crowd', 39, 453)
+	setObjectOrder('frontpeeps', 7)
+	scaleObject('frontpeeps', 1.3, 1.3)
+	setScrollFactor('frontpeeps', 1.1, 1)
+	addAnimationByPrefix('frontpeeps', 'anim', 'people', 24, true)
+	--addAnimation('frontpeeps', 'anim', {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19})
+	playAnim('frontpeeps', 'anim', true)
+	addLuaSprite('frontpeeps', true)
 	
+	setObjectOrder('boyfriendGroup', 10)
+	setObjectOrder('dadGroup', 10)
 end
