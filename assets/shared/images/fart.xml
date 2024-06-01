@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fart.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gassyboy0000" x="11" y="11" width="186" height="201"/>
+	<SubTexture name="gassyboy0001" x="207" y="11" width="186" height="201"/>
+	<SubTexture name="gassyboy0002" x="11" y="222" width="179" height="198" frameX="-2" frameY="-2" frameWidth="186" frameHeight="201"/>
+	<SubTexture name="gassyboy0003" x="200" y="222" width="179" height="198" frameX="-2" frameY="-2" frameWidth="186" frameHeight="201"/>
+</TextureAtlas>

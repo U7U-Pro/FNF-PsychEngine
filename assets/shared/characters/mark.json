@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-190,
+				-140
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "mark idle"
+		},
+		{
+			"offsets": [
+				-189,
+				-280
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "mark singleft"
+		},
+		{
+			"offsets": [
+				-410,
+				-273
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "mark right"
+		},
+		{
+			"offsets": [
+				-340,
+				-380
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "mark singdown"
+		},
+		{
+			"offsets": [
+				-356,
+				-240
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "mark singup"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/mark",
+	"position": [
+		-200,
+		100
+	],
+	"healthicon": "dad",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		-10,
+		110
+	],
+	"sing_duration": 6.1,
+	"scale": 1.8,
+	"_editor_isPlayer": false
+}

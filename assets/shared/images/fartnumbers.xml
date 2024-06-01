@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="fartnumberss.png">
+<TextureAtlas imagePath="fartnumbers.png">
 	<!-- Created with Adobe Animate version 22.0.4.185 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="0 normal instance 10000" x="5" y="5" width="133" height="148"/>
-	<SubTexture name="1 normal instance 10000" x="340" y="318" width="60" height="133"/>
-	<SubTexture name="2 normal instance 10000" x="242" y="318" width="95" height="145"/>
-	<SubTexture name="3 normal instance 10000" x="5" y="303" width="113" height="144"/>
-	<SubTexture name="4 normal instance 10000" x="265" y="5" width="113" height="130"/>
-	<SubTexture name="5 normal instance 10000" x="242" y="170" width="110" height="145"/>
-	<SubTexture name="6 normal instance 10000" x="141" y="5" width="121" height="162"/>
-	<SubTexture name="7 normal instance 10000" x="129" y="170" width="110" height="149"/>
-	<SubTexture name="8 normal instance 10000" x="5" y="156" width="121" height="144"/>
-	<SubTexture name="9 normal instance 10000" x="121" y="322" width="95" height="142"/>
-	<SubTexture name=": normal instance 10000" x="355" y="138" width="35" height="116"/>
+	<SubTexture name="0 normal instance 10000" x="62" y="5" width="59" height="65"/>
+	<SubTexture name="1 normal instance 10000" x="57" y="140" width="26" height="59"/>
+	<SubTexture name="2 normal instance 10000" x="172" y="72" width="42" height="64"/>
+	<SubTexture name="3 normal instance 10000" x="119" y="73" width="50" height="63"/>
+	<SubTexture name="4 normal instance 10000" x="119" y="139" width="51" height="58"/>
+	<SubTexture name="5 normal instance 10000" x="124" y="5" width="49" height="64"/>
+	<SubTexture name="6 normal instance 10000" x="5" y="5" width="54" height="72"/>
+	<SubTexture name="7 normal instance 10000" x="5" y="80" width="49" height="65"/>
+	<SubTexture name="8 normal instance 10000" x="62" y="73" width="54" height="64"/>
+	<SubTexture name="9 normal instance 10000" x="176" y="5" width="42" height="62"/>
+	<SubTexture name=": normal instance 10000" x="5" y="148" width="16" height="51"/>
 </TextureAtlas>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="packet.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="paracetamol packie0000" x="11" y="11" width="531" height="229"/>
+	<SubTexture name="paracetamol packie0001" x="11" y="250" width="531" height="229"/>
+	<SubTexture name="paracetamol packie0002" x="11" y="489" width="530" height="229" frameX="0" frameY="0" frameWidth="531" frameHeight="229"/>
+	<SubTexture name="paracetamol packie0003" x="11" y="728" width="530" height="229" frameX="0" frameY="0" frameWidth="531" frameHeight="229"/>
+</TextureAtlas>

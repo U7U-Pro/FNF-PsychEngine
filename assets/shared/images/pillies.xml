@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pillies.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="pills0000" x="11" y="11" width="478" height="185"/>
+	<SubTexture name="pills0001" x="499" y="11" width="478" height="185"/>
+	<SubTexture name="pills0002" x="987" y="11" width="478" height="185"/>
+	<SubTexture name="pills0003" x="1475" y="11" width="478" height="185"/>
+	<SubTexture name="pills 1down0000" x="1963" y="11" width="478" height="185"/>
+	<SubTexture name="pills 1down0001" x="2451" y="11" width="478" height="185"/>
+	<SubTexture name="pills 1down0002" x="2939" y="11" width="478" height="185"/>
+	<SubTexture name="pills 1down0003" x="3427" y="11" width="478" height="185"/>
+	<SubTexture name="pills 2down0000" x="11" y="206" width="478" height="185"/>
+	<SubTexture name="pills 2down0001" x="499" y="206" width="478" height="185"/>
+	<SubTexture name="pills 2down0002" x="987" y="206" width="478" height="185"/>
+	<SubTexture name="pills 2down0003" x="1475" y="206" width="478" height="185"/>
+	<SubTexture name="pills 3down0000" x="1963" y="206" width="478" height="185"/>
+	<SubTexture name="pills 3down0001" x="2451" y="206" width="478" height="185"/>
+	<SubTexture name="pills 3down0002" x="2939" y="206" width="478" height="184" frameX="0" frameY="0" frameWidth="478" frameHeight="185"/>
+	<SubTexture name="pills 3down0003" x="3427" y="206" width="478" height="184" frameX="0" frameY="0" frameWidth="478" frameHeight="185"/>
+	<SubTexture name="pills 4down0000" x="11" y="401" width="478" height="185"/>
+	<SubTexture name="pills 4down0001" x="499" y="401" width="478" height="185"/>
+	<SubTexture name="pills 4down0002" x="987" y="401" width="478" height="185"/>
+	<SubTexture name="pills 4down0003" x="1475" y="401" width="478" height="185"/>
+	<SubTexture name="pills 5down0000" x="1963" y="401" width="478" height="185"/>
+	<SubTexture name="pills 5down0001" x="2451" y="401" width="478" height="185"/>
+	<SubTexture name="pills 5down0002" x="2939" y="401" width="478" height="185"/>
+	<SubTexture name="pills 5down0003" x="3427" y="401" width="478" height="185"/>
+	<SubTexture name="pills 6down0000" x="11" y="596" width="478" height="185"/>
+	<SubTexture name="pills 6down0001" x="499" y="596" width="478" height="185"/>
+	<SubTexture name="pills 6down0002" x="987" y="596" width="478" height="185"/>
+	<SubTexture name="pills 6down0003" x="1475" y="596" width="478" height="185"/>
+	<SubTexture name="pills 7down0000" x="1963" y="596" width="478" height="191"/>
+	<SubTexture name="pills 7down0001" x="2451" y="596" width="478" height="191"/>
+	<SubTexture name="pills 7down0002" x="2939" y="596" width="478" height="191"/>
+	<SubTexture name="pills 7down0003" x="3427" y="596" width="478" height="191"/>
+	<SubTexture name="pills 8down0000" x="11" y="797" width="478" height="199"/>
+	<SubTexture name="pills 8down0001" x="499" y="797" width="478" height="199"/>
+	<SubTexture name="pills 8down0002" x="987" y="797" width="478" height="199"/>
+	<SubTexture name="pills 8down0003" x="1475" y="797" width="478" height="199"/>
+	<SubTexture name="pills 9down0000" x="1963" y="797" width="478" height="200"/>
+	<SubTexture name="pills 9down0001" x="2451" y="797" width="478" height="200"/>
+	<SubTexture name="pills 9down0002" x="2939" y="797" width="478" height="200"/>
+	<SubTexture name="pills 9down0003" x="3427" y="797" width="478" height="200"/>
+	<SubTexture name="pills DEATH0000" x="11" y="1007" width="463" height="176"/>
+	<SubTexture name="pills DEATH0001" x="484" y="1007" width="463" height="176"/>
+	<SubTexture name="pills DEATH0002" x="957" y="1007" width="463" height="176"/>
+	<SubTexture name="pills DEATH0003" x="1430" y="1007" width="463" height="176"/>
+</TextureAtlas>
