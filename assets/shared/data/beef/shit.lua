@@ -1,5 +1,28 @@
 function onCreate()
-    local offset = 500
+    local offset = 0
+
+    --death
+    setPropertyFromClass('GameOverSubstate', 'characterName', boyfriendName)
+    --setPropertyFromClass('GameOverSubstate', 'deathSoundName', '')
+    --setPropertyFromClass('GameOverSubstate', 'endSoundName', '')
+
+    
+    --adrenalin e 
+    makeAnimatedLuaSprite('blob', 'adrenaline', -50, screenHeight-400)
+    addAnimationByPrefix('blob', 'pulse', 'adrenaline pulse')
+    setObjectCamera('blob', 'camHUD')
+    addLuaSprite('blob', true)
+
+    makeLuaText('acc', 'its not workin', 400, 150, screenHeight-140)
+    setTextAlignment('acc', 'left')
+    setTextFont('acc', 'mingliu.ttf')
+    setTextBorder('acc', 1, '#FF0000')
+    setTextColor('acc', '#00FF00')
+    setTextSize('acc', 50)
+    setObjectCamera('acc', 'camHUD')
+    setObjectOrder('acc', getObjectOrder('blob')+1)
+    addLuaText('acc')
+
     --timebar bullshit please kill me
     setProperty('timeBar.angle', 270)
     setProperty('iconP1.alpha', 0)
@@ -7,6 +30,7 @@ function onCreate()
     setProperty('healthBar.alpha', 0)
     setProperty('timeBar.x', -130+offset)
     setProperty('timeBar.y', 420)
+    setProperty('scoreTxt.alpha', 0)
     scaleObject('timeBar', 0.4, 8)
     setObjectCamera('timeBar', 'camHUD')
     
@@ -40,8 +64,8 @@ function onCreate()
 
     makeAnimatedLuaSprite('pills', 'pillies', getProperty('packet.x')+20, getProperty('packet.y')+20)
     setObjectCamera('pills', 'camHUD')
-    scaleObject('packet', 0.7, 0.7)
-    addAnimationByPrefix('pills', '0down', 'pills')
+    scaleObject('pills', 0.7, 0.7)
+    addAnimationByPrefix('pills', '0down', 'pills0')
     addAnimationByPrefix('pills', '1down', 'pills 1down')
     addAnimationByPrefix('pills', '2down', 'pills 2down')
     addAnimationByPrefix('pills', '3down', 'pills 3down')
@@ -54,10 +78,41 @@ function onCreate()
     addAnimationByPrefix('pills', 'death', 'pills DEATH')
     playAnim('pills', '0down')
     addLuaSprite('pills', true)
+
+    --chunking tron
+    makeLuaSprite('chunk', 'chunkotron', 300, screenHeight-256)
+    setObjectCamera('chunk', 'camHUD')
+    addLuaSprite('chunk',true)
+
+    makeLuaText('scorec', 'score', 310, getProperty('chunk.x')+128, getProperty('chunk.y')+89)
+    setTextAlignment('scorec', 'left')
+    setTextFont('scorec', 'mingliu.ttf')
+    setTextSize('scorec', 80)
+    setTextColor('scorec', '#00FF00')
+    setTextBorder('scorec', '1', '#FF0000')
+    addLuaText('scorec')
+
+    makeAnimatedLuaSprite('slurp', 'alphabet', getProperty('chunk.x')+70, getProperty('chunk.y')+79)
+    addAnimationByPrefix('slurp', 's', '$ normal instance 1')
+    setObjectCamera('slurp', 'camHUD')
+    playAnim('slurp', 's')
+    addLuaSprite('slurp', true)
 end
 
-function noteMiss()
-    playAnim('pills', getMisses..'down')
-
-
+function onUpdate(elapsed)
+    --kill opponent strums cuz whythe hell not????
+    for i = 0, 4, 1 do
+        setPropertyFromGroup('opponentStrums', i, 'alpha', tonumber(0))
+    end
 end
+
+function onUpdateScore(miss)
+    setTextString('acc', string.format("%.2f", tostring(rating*100)).."%")
+    setProperty('scorec.text', score)
+    local cursprite = getMisses()..'down'
+    playAnim('pills', cursprite)
+    if getMisses()>9 then
+        playAnim('pills', 'death')
+    end
+end
+

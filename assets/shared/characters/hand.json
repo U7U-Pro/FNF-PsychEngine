@@ -2,79 +2,79 @@
 	"animations": [
 		{
 			"offsets": [
-				0,
-				-60
+				48,
+				0
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "idle",
 			"loop": true,
-			"name": "beefidle"
+			"name": "idle"
 		},
 		{
 			"offsets": [
-				375,
-				-62
+				97,
+				15
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "beef left"
+			"name": "left"
 		},
 		{
 			"offsets": [
-				-120,
-				-264
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singDOWN",
-			"loop": false,
-			"name": "beef down"
-		},
-		{
-			"offsets": [
-				34,
-				90
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singUP",
-			"loop": false,
-			"name": "beef up"
-		},
-		{
-			"offsets": [
-				-340,
-				-73
+				68,
+				8
 			],
 			"indices": [],
 			"fps": 24,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "beef right"
+			"name": "right"
+		},
+		{
+			"offsets": [
+				110,
+				-141
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-106,
+				299
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "sing up"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/BEEF 3",
+	"image": "characters/hand",
 	"position": [
-		-230,
-		130
+		0,
+		350
 	],
-	"healthicon": "dad",
-	"flip_x": false,
+	"healthicon": "bf",
+	"flip_x": true,
 	"healthbar_colors": [
-		175,
-		102,
-		206
+		49,
+		176,
+		209
 	],
 	"camera_position": [
-		200,
-		400
+		0,
+		0
 	],
-	"sing_duration": 6.1,
+	"sing_duration": 4,
 	"scale": 1,
-	"_editor_isPlayer": false
+	"_editor_isPlayer": true
 }
