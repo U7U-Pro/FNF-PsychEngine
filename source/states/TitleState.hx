@@ -162,12 +162,16 @@ class TitleState extends MusicBeatState
 		
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
 		if (FlxG.random.int(1,100)>99){
+			if (FlxG.random.int(1,100)>99){
+				logoBl.frames = Paths.image('LOGO3');
+			}else{
 			logoBl.frames = Paths.getSparrowAtlas('LOGO2');
-			logoBl.animation.addByPrefix('bump', 'bals loger instance 1', 24, false);
+			logoBl.animation.addByPrefix('bump', 'bals loger instance 1', 24, false);}
 		}else{
 			logoBl.frames = Paths.getSparrowAtlas('LOGO1');
 			logoBl.animation.addByPrefix('bump', 'ballsLogo instance 1', 24, false);
 		}
+
 		logoBl.antialiasing = ClientPrefs.data.antialiasing;
 
 		logoBl.animation.play('bump');
@@ -377,14 +381,14 @@ class TitleState extends MusicBeatState
 					#if PSYCH_WATERMARKS
 					createCoolText(['Psych Engine by'], 40);
 					#else
-					createCoolText(['thriftysoles', 'u7u_pro', 'biker mightve been there']);
+					createCoolText(['glogcoin kludgeware']);
 					#end
 				case 4:
 					#if PSYCH_WATERMARKS
 					addMoreText('Shadow Mario', 40);
 					addMoreText('Riveren', 40);
 					#else
-					addMoreText('present');
+					addMoreText('presents');
 					#end
 				case 5:
 					deleteCoolText();

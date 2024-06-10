@@ -38,7 +38,7 @@ function onCreate()
 	scaleObject('obj7', 1.8, 1.8)
 	addLuaSprite('obj7', true)
 
-	setObjectOrder('boyfriendGroup', 7)
-	setObjectOrder('dadGroup', 7)
+	setObjectOrder('boyfriendGroup', 10)
+	setObjectOrder('dadGroup', 10)
 	
 end
