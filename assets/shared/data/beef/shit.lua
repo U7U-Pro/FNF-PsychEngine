@@ -2,9 +2,8 @@ function onCreate()
     local offset = 0
 
     --death
-    setPropertyFromClass('GameOverSubstate', 'characterName', boyfriendName)
-    --setPropertyFromClass('GameOverSubstate', 'deathSoundName', '')
-    --setPropertyFromClass('GameOverSubstate', 'endSoundName', '')
+    setPropertyFromClass('substates.GameOverSubstate', 'characterName', 'deathU7U')
+
 
     
     --adrenalin e 
@@ -97,6 +96,11 @@ function onCreate()
     setObjectCamera('slurp', 'camHUD')
     playAnim('slurp', 's')
     addLuaSprite('slurp', true)
+
+    makeGraphic('black', screenWidth, screenHeight, '#000000')
+    setObjectCamera('black', 'camHUD')
+    addLuaSprite('black', false)
+    setProperty('black.alpha', 0)
 end
 
 function onUpdate(elapsed)
@@ -107,12 +111,31 @@ function onUpdate(elapsed)
 end
 
 function onUpdateScore(miss)
+    if miss == true then
+        playSound('missnote'..getRandomInt(1,3))
+    end
     setTextString('acc', string.format("%.2f", tostring(rating*100)).."%")
     setProperty('scorec.text', score)
     local cursprite = getMisses()..'down'
     playAnim('pills', cursprite)
     if getMisses()>9 then
+        setObjectOrder('packet', getObjectOrder('chunk')+1)
+        setObjectOrder('pills', getObjectOrder('packet')+1)
+        screenCenter('pills')
+        screenCenter('packet')
+        doTweenX('pcenter', 'pills.scale', 2, 1, 'expoInOut')
+        doTweenY('pcenter2', 'pills.scale', 2, 1, 'expoInOut')
+        doTweenX('pacenter', 'packet.scale', 2, 1, 'expoInOut')
+        doTweenY('pacenter2', 'packet.scale', 2, 1, 'expoInOut')
+        doTweenAlpha('fade', 'black', 100, 1, 'expoInOut')
         playAnim('pills', 'death')
     end
 end
 
+
+
+function onTweenCompleted(tag)
+    if tag == 'pcenter' then
+        setHealth(0)
+    end
+end

@@ -163,18 +163,20 @@ class TitleState extends MusicBeatState
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
 		if (FlxG.random.int(1,100)>99){
 			if (FlxG.random.int(1,100)>99){
-				logoBl.frames = Paths.image('LOGO3');
+				logoBl.graphic = Paths.image('LOGO3');
 			}else{
 			logoBl.frames = Paths.getSparrowAtlas('LOGO2');
-			logoBl.animation.addByPrefix('bump', 'bals loger instance 1', 24, false);}
+			logoBl.animation.addByPrefix('bump', 'bals loger instance 1', 24, false);
+			logoBl.animation.play('bump');}
 		}else{
 			logoBl.frames = Paths.getSparrowAtlas('LOGO1');
 			logoBl.animation.addByPrefix('bump', 'ballsLogo instance 1', 24, false);
+			logoBl.animation.play('bump');
 		}
 
 		logoBl.antialiasing = ClientPrefs.data.antialiasing;
 
-		logoBl.animation.play('bump');
+		
 		logoBl.updateHitbox();
 		logoBl.screenCenter();
 
@@ -293,11 +295,7 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					if (mustUpdate) {
-						MusicBeatState.switchState(new OutdatedState());
-					} else {
-						MusicBeatState.switchState(new MainMenuState());
-					}
+					MusicBeatState.switchState(new MainMenuState());
 					closedState = true;
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
