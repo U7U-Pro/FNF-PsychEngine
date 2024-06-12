@@ -387,9 +387,11 @@ class TitleState extends MusicBeatState
 					addMoreText('Riveren', 40);
 					#else
 					addMoreText('presents');
+					ngSpr.visible = true;
 					#end
 				case 5:
 					deleteCoolText();
+					ngSpr.visible = false;
 				case 6:
 					#if PSYCH_WATERMARKS
 					createCoolText(['Not associated', 'with'], -40);
@@ -398,10 +400,8 @@ class TitleState extends MusicBeatState
 					#end
 				case 8:
 					addMoreText('dealkeks', -40);
-					ngSpr.visible = true;
 				case 9:
 					deleteCoolText();
-					ngSpr.visible = false;
 				case 10:
 					createCoolText([curWacky[0]]);
 				case 12:

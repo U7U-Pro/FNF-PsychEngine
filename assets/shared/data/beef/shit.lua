@@ -7,8 +7,9 @@ function onCreate()
 
     
     --adrenalin e 
-    makeAnimatedLuaSprite('blob', 'adrenaline', -50, screenHeight-400)
+    makeAnimatedLuaSprite('blob', 'adrenaline', -50, screenHeight-(400*0.80))
     addAnimationByPrefix('blob', 'pulse', 'adrenaline pulse')
+    scaleObject('blob', 0.80, 0.80)
     setObjectCamera('blob', 'camHUD')
     addLuaSprite('blob', true)
 
@@ -79,19 +80,21 @@ function onCreate()
     addLuaSprite('pills', true)
 
     --chunking tron
-    makeLuaSprite('chunk', 'chunkotron', 300, screenHeight-256)
+    local mult = 0.75
+    makeLuaSprite('chunk', 'chunkotron', 300, screenHeight-256*mult)
+    scaleObject('chunk', mult, mult)
     setObjectCamera('chunk', 'camHUD')
     addLuaSprite('chunk',true)
 
-    makeLuaText('scorec', 'score', 310, getProperty('chunk.x')+128, getProperty('chunk.y')+89)
+    makeLuaText('scorec', 'score', 310*mult, getProperty('chunk.x')+128*mult+6, getProperty('chunk.y')+89*mult+10)
     setTextAlignment('scorec', 'left')
     setTextFont('scorec', 'mingliu.ttf')
-    setTextSize('scorec', 80)
+    setTextSize('scorec', 80*mult)
     setTextColor('scorec', '#00FF00')
     setTextBorder('scorec', '1', '#FF0000')
     addLuaText('scorec')
 
-    makeAnimatedLuaSprite('slurp', 'alphabet', getProperty('chunk.x')+70, getProperty('chunk.y')+79)
+    makeAnimatedLuaSprite('slurp', 'alphabet', getProperty('chunk.x')+70*mult, getProperty('chunk.y')+79*mult)
     addAnimationByPrefix('slurp', 's', '$ normal instance 1')
     setObjectCamera('slurp', 'camHUD')
     playAnim('slurp', 's')
