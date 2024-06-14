@@ -56,6 +56,7 @@ class FreeplayState extends MusicBeatState
 		persistentUpdate = true;
 		PlayState.isStoryMode = false;
 		WeekData.reloadWeekFiles(false);
+		Main.fpsVar.visible = ClientPrefs.data.showFPS;
 
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence

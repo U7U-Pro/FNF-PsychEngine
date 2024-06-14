@@ -45,6 +45,7 @@ class MainMenuState extends MusicBeatState
 		transOut = FlxTransitionableState.defaultTransOut;
 
 		persistentUpdate = persistentDraw = true;
+		Main.fpsVar.visible = ClientPrefs.data.showFPS;
 
 		var bg:FlxSprite = new FlxSprite(-80);
 		if(FlxG.random.int(1,10)>4){
@@ -195,13 +196,7 @@ class MainMenuState extends MusicBeatState
 				}
 			}
 			}
-			#if desktop
-			if (controls.justPressed('debug_1'))
-			{
-				selectedSomethin = true;
-				MusicBeatState.switchState(new MasterEditorMenu());
-			}
-			#end
+
 		}
 
 		super.update(elapsed);

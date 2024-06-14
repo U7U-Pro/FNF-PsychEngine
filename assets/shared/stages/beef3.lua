@@ -1,10 +1,9 @@
---created with Super_Hugo's Stage Editor v1.6.3
 
 function onCreate()
 
-	makeLuaSprite('sky', 'skybox0', -670, -338)
+	makeLuaSprite('sky', 'skybox0', -800, -300)
 	setObjectOrder('sky', 0)
-	scaleObject('sky', 2, 2)
+	scaleObject('sky', 2.5, 2.2)
 	addLuaSprite('sky', true)
 	
 	makeAnimatedLuaSprite('malice', 'eternal_malice', 787, -266)
@@ -36,7 +35,7 @@ function onCreate()
 	
 	makeLuaSprite('floor', 'floor5', -813, 909)
 	setObjectOrder('floor', 6)
-	scaleObject('floor', 2.3, 2.3)
+	scaleObject('floor', 2.3, 2.5)
 	addLuaSprite('floor', true)
 	
 	makeAnimatedLuaSprite('shaft', 'SHAFT', 1184, 97)

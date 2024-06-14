@@ -120,6 +120,9 @@ function onUpdate(elapsed)
     end
     local currate = 'rating/rating'..string.gsub(string.gsub(ratingName, "%s+", ''), "!", "")
     loadGraphic('rate', currate)
+    if rating == 1 then
+        loadGraphic('rate', 'rating/ratingPerfect!!')        
+    end
 end
 
 function onUpdateScore(miss)

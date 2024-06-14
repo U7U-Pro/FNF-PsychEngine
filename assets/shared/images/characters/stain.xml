@@ -2,54 +2,128 @@
 <TextureAtlas imagePath="stain.png">
 	<!-- Created with Adobe Animate version 23.0.0.407 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="stain idle0000" x="11" y="11" width="517" height="237" frameX="0" frameY="-19" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain idle0001" x="538" y="11" width="517" height="237" frameX="0" frameY="-19" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain idle0002" x="1065" y="11" width="517" height="242" frameX="0" frameY="-14" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain idle0003" x="1592" y="11" width="517" height="242" frameX="0" frameY="-14" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain idle0004" x="2119" y="11" width="517" height="249" frameX="0" frameY="-7" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain idle0005" x="2646" y="11" width="517" height="249" frameX="0" frameY="-7" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain idle0006" x="3173" y="11" width="517" height="256"/>
-	<SubTexture name="stain idle0007" x="11" y="277" width="517" height="256"/>
-	<SubTexture name="stain idle0008" x="538" y="277" width="517" height="253" frameX="0" frameY="-3" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain idle0009" x="1065" y="277" width="517" height="253" frameX="0" frameY="-3" frameWidth="517" frameHeight="256"/>
-	<SubTexture name="stain singdown0000" x="1592" y="277" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singdown0001" x="2119" y="277" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singdown0002" x="2646" y="277" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singdown0003" x="3173" y="277" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singdown0004" x="11" y="543" width="517" height="184" frameX="0" frameY="-5" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singdown0005" x="538" y="543" width="517" height="184" frameX="0" frameY="-5" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singdown0006" x="1065" y="543" width="517" height="189"/>
-	<SubTexture name="stain singdown0007" x="1592" y="543" width="517" height="189"/>
-	<SubTexture name="stain singdown0008" x="2119" y="543" width="517" height="186" frameX="0" frameY="-3" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singdown0009" x="2646" y="543" width="517" height="186" frameX="0" frameY="-3" frameWidth="517" frameHeight="189"/>
-	<SubTexture name="stain singleft0000" x="3173" y="543" width="532" height="213" frameX="0" frameY="-5" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0001" x="11" y="766" width="532" height="213" frameX="0" frameY="-5" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0002" x="553" y="766" width="532" height="211" frameX="0" frameY="-7" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0003" x="1095" y="766" width="532" height="211" frameX="0" frameY="-7" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0004" x="1637" y="766" width="530" height="218" frameX="-2" frameY="0" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0005" x="2177" y="766" width="530" height="218" frameX="-2" frameY="0" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0006" x="2717" y="766" width="527" height="218" frameX="-5" frameY="0" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0007" x="3254" y="766" width="527" height="218" frameX="-5" frameY="0" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0008" x="11" y="994" width="528" height="218" frameX="-4" frameY="0" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singleft0009" x="549" y="994" width="528" height="218" frameX="-4" frameY="0" frameWidth="532" frameHeight="218"/>
-	<SubTexture name="stain singright0000" x="1087" y="994" width="517" height="228" frameX="0" frameY="-17" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0001" x="1614" y="994" width="517" height="228" frameX="0" frameY="-17" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0002" x="2141" y="994" width="517" height="231" frameX="0" frameY="-14" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0003" x="2668" y="994" width="517" height="231" frameX="0" frameY="-14" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0004" x="3195" y="994" width="517" height="234" frameX="0" frameY="-11" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0005" x="11" y="1238" width="517" height="234" frameX="0" frameY="-11" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0006" x="538" y="1238" width="517" height="241" frameX="0" frameY="-4" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0007" x="1065" y="1238" width="517" height="241" frameX="0" frameY="-4" frameWidth="517" frameHeight="245"/>
-	<SubTexture name="stain singright0008" x="1592" y="1238" width="517" height="245"/>
-	<SubTexture name="stain singright0009" x="2119" y="1238" width="517" height="245"/>
-	<SubTexture name="stain singup0000" x="2646" y="1238" width="517" height="307"/>
-	<SubTexture name="stain singup0001" x="3173" y="1238" width="517" height="307"/>
-	<SubTexture name="stain singup0002" x="11" y="1555" width="517" height="305" frameX="0" frameY="-2" frameWidth="517" frameHeight="307"/>
-	<SubTexture name="stain singup0003" x="538" y="1555" width="517" height="305" frameX="0" frameY="-2" frameWidth="517" frameHeight="307"/>
-	<SubTexture name="stain singup0004" x="1065" y="1555" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
-	<SubTexture name="stain singup0005" x="1592" y="1555" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
-	<SubTexture name="stain singup0006" x="2119" y="1555" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
-	<SubTexture name="stain singup0007" x="2646" y="1555" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
-	<SubTexture name="stain singup0008" x="3173" y="1555" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
-	<SubTexture name="stain singup0009" x="11" y="1870" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain idle0000" x="11" y="11" width="517" height="253" frameX="0" frameY="-9" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0001" x="538" y="11" width="517" height="253" frameX="0" frameY="-9" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0002" x="1065" y="11" width="517" height="255" frameX="0" frameY="-7" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0003" x="1592" y="11" width="517" height="255" frameX="0" frameY="-7" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0004" x="2119" y="11" width="517" height="259" frameX="0" frameY="-3" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0005" x="2646" y="11" width="517" height="259" frameX="0" frameY="-3" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0006" x="3173" y="11" width="517" height="262"/>
+	<SubTexture name="stain idle0007" x="3700" y="11" width="517" height="262"/>
+	<SubTexture name="stain idle0008" x="4227" y="11" width="517" height="261" frameX="0" frameY="-1" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0009" x="4754" y="11" width="517" height="261" frameX="0" frameY="-1" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0010" x="5281" y="11" width="517" height="259" frameX="0" frameY="-3" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0011" x="5808" y="11" width="517" height="259" frameX="0" frameY="-3" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0012" x="6335" y="11" width="517" height="255" frameX="0" frameY="-7" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain idle0013" x="6862" y="11" width="517" height="255" frameX="0" frameY="-7" frameWidth="517" frameHeight="262"/>
+	<SubTexture name="stain pull up0000" x="7389" y="11" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0001" x="11" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0002" x="538" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0003" x="1065" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0004" x="1592" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0005" x="2119" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0006" x="2646" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0007" x="3173" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0008" x="3700" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0009" x="4227" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0010" x="4754" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0011" x="5281" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0012" x="5808" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0013" x="6335" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0014" x="6862" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0015" x="7389" y="283" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0016" x="11" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0017" x="538" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0018" x="1065" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0019" x="1592" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0020" x="2119" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0021" x="2646" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0022" x="3173" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0023" x="3700" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0024" x="4227" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0025" x="4754" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0026" x="5281" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0027" x="5808" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0028" x="6335" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0029" x="6862" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0030" x="7389" y="418" width="517" height="125" frameX="0" frameY="-143" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0031" x="11" y="553" width="517" height="129" frameX="0" frameY="-139" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0032" x="538" y="553" width="517" height="142" frameX="0" frameY="-126" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0033" x="1065" y="553" width="517" height="189" frameX="0" frameY="-79" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0034" x="1592" y="553" width="517" height="263" frameX="0" frameY="-5" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0035" x="2119" y="553" width="517" height="264" frameX="0" frameY="-4" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0036" x="2646" y="553" width="517" height="268"/>
+	<SubTexture name="stain pull up0037" x="3173" y="553" width="517" height="263" frameX="0" frameY="-5" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0038" x="3700" y="553" width="517" height="258" frameX="0" frameY="-10" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0039" x="4227" y="553" width="517" height="257" frameX="0" frameY="-11" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0040" x="4754" y="553" width="517" height="258" frameX="0" frameY="-10" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0041" x="5281" y="553" width="517" height="259" frameX="0" frameY="-9" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0042" x="5808" y="553" width="517" height="263" frameX="0" frameY="-5" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0043" x="6335" y="553" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0044" x="6862" y="553" width="517" height="259" frameX="0" frameY="-9" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0045" x="7389" y="553" width="517" height="262" frameX="0" frameY="-6" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0046" x="11" y="831" width="517" height="257" frameX="0" frameY="-11" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0047" x="538" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0048" x="1065" y="831" width="517" height="255" frameX="0" frameY="-13" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0049" x="1592" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0050" x="2119" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0051" x="2646" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0052" x="3173" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0053" x="3700" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0054" x="4227" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0055" x="4754" y="831" width="517" height="260" frameX="0" frameY="-8" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0056" x="5281" y="831" width="517" height="254" frameX="0" frameY="-14" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0057" x="5808" y="831" width="517" height="252" frameX="0" frameY="-16" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0058" x="6335" y="831" width="517" height="254" frameX="0" frameY="-14" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0059" x="6862" y="831" width="517" height="254" frameX="0" frameY="-14" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0060" x="7389" y="831" width="517" height="258" frameX="0" frameY="-10" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0061" x="11" y="1101" width="517" height="258" frameX="0" frameY="-10" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0062" x="538" y="1101" width="517" height="262" frameX="0" frameY="-6" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0063" x="1065" y="1101" width="517" height="262" frameX="0" frameY="-6" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0064" x="1592" y="1101" width="517" height="261" frameX="0" frameY="-7" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0065" x="2119" y="1101" width="517" height="261" frameX="0" frameY="-7" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0066" x="2646" y="1101" width="517" height="258" frameX="0" frameY="-10" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0067" x="3173" y="1101" width="517" height="258" frameX="0" frameY="-10" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0068" x="3700" y="1101" width="517" height="254" frameX="0" frameY="-14" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain pull up0069" x="4227" y="1101" width="517" height="254" frameX="0" frameY="-14" frameWidth="517" frameHeight="268"/>
+	<SubTexture name="stain singdown0000" x="4754" y="1101" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singdown0001" x="5281" y="1101" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singdown0002" x="5808" y="1101" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singdown0003" x="6335" y="1101" width="517" height="181" frameX="0" frameY="-8" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singdown0004" x="6862" y="1101" width="517" height="184" frameX="0" frameY="-5" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singdown0005" x="7389" y="1101" width="517" height="184" frameX="0" frameY="-5" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singdown0006" x="11" y="1373" width="517" height="189"/>
+	<SubTexture name="stain singdown0007" x="538" y="1373" width="517" height="189"/>
+	<SubTexture name="stain singdown0008" x="1065" y="1373" width="517" height="186" frameX="0" frameY="-3" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singdown0009" x="1592" y="1373" width="517" height="186" frameX="0" frameY="-3" frameWidth="517" frameHeight="189"/>
+	<SubTexture name="stain singleft0000" x="2119" y="1373" width="532" height="213" frameX="0" frameY="-5" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0001" x="2661" y="1373" width="532" height="213" frameX="0" frameY="-5" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0002" x="3203" y="1373" width="532" height="211" frameX="0" frameY="-7" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0003" x="3745" y="1373" width="532" height="211" frameX="0" frameY="-7" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0004" x="4287" y="1373" width="530" height="218" frameX="-2" frameY="0" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0005" x="4827" y="1373" width="530" height="218" frameX="-2" frameY="0" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0006" x="5367" y="1373" width="527" height="218" frameX="-5" frameY="0" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0007" x="5904" y="1373" width="527" height="218" frameX="-5" frameY="0" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0008" x="6441" y="1373" width="528" height="218" frameX="-4" frameY="0" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singleft0009" x="6979" y="1373" width="528" height="218" frameX="-4" frameY="0" frameWidth="532" frameHeight="218"/>
+	<SubTexture name="stain singright0000" x="7517" y="1373" width="517" height="228" frameX="0" frameY="-17" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0001" x="11" y="1611" width="517" height="228" frameX="0" frameY="-17" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0002" x="538" y="1611" width="517" height="231" frameX="0" frameY="-14" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0003" x="1065" y="1611" width="517" height="231" frameX="0" frameY="-14" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0004" x="1592" y="1611" width="517" height="234" frameX="0" frameY="-11" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0005" x="2119" y="1611" width="517" height="234" frameX="0" frameY="-11" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0006" x="2646" y="1611" width="517" height="241" frameX="0" frameY="-4" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0007" x="3173" y="1611" width="517" height="241" frameX="0" frameY="-4" frameWidth="517" frameHeight="245"/>
+	<SubTexture name="stain singright0008" x="3700" y="1611" width="517" height="245"/>
+	<SubTexture name="stain singright0009" x="4227" y="1611" width="517" height="245"/>
+	<SubTexture name="stain singup0000" x="4754" y="1611" width="517" height="307"/>
+	<SubTexture name="stain singup0001" x="5281" y="1611" width="517" height="307"/>
+	<SubTexture name="stain singup0002" x="5808" y="1611" width="517" height="305" frameX="0" frameY="-2" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain singup0003" x="6335" y="1611" width="517" height="305" frameX="0" frameY="-2" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain singup0004" x="6862" y="1611" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain singup0005" x="7389" y="1611" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain singup0006" x="11" y="1928" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain singup0007" x="538" y="1928" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain singup0008" x="1065" y="1928" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
+	<SubTexture name="stain singup0009" x="1592" y="1928" width="517" height="299" frameX="0" frameY="-8" frameWidth="517" frameHeight="307"/>
 </TextureAtlas>
