@@ -55,7 +55,7 @@ function onUpdate(elapsed)
     noteTweenX('joj4', 7, defaultPlayerStrumX3-290, 1, 'easeInOut')
 
     if curStep == 2304 then
-        cameraFade('game', '#000000', 10)
+        cameraFade('game', '#000000', 9)
         doTweenZoom('byebye', 'camGame', 0.05, 9, 'easeInOut')
     end
     if curStep == 2431 then
