@@ -1,8 +1,4 @@
-package shaders;
-import flixel.system.FlxAssets.FlxShader;
-
-class Fog extends FlxShader {
-    @:glFragmentSource('#ifdef GL_ES
+#ifdef GL_ES
 precision mediump float;
 #endif
         
@@ -78,11 +74,4 @@ void main() {
                 clamp(length(r.x),0.0,1.0));
         
     gl_FragColor = vec4((f*f*f+.6*f*f+.5*f)*color,1.);
-}'
-        )
-
-        public function new()
-            {
-                super();
-            }
 }
