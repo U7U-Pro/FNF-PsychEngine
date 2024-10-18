@@ -11,7 +11,7 @@ import states.TitleState;
 	public var downScroll:Bool = false;
 	public var middleScroll:Bool = false;
 	public var opponentStrums:Bool = true;
-	public var showFPS:Bool = true;
+	public var showFPS:Bool = false;
 	public var flashing:Bool = true;
 	public var autoPause:Bool = true;
 	public var antialiasing:Bool = true;
@@ -43,7 +43,7 @@ import states.TitleState;
 	public var healthBarAlpha:Float = 1;
 	public var hitsoundVolume:Float = 0;
 	public var pauseMusic:String = 'Tea Time';
-	public var checkForUpdates:Bool = true;
+	public var checkForUpdates:Bool = false;
 	public var comboStacking:Bool = true;
 	public var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
@@ -84,10 +84,12 @@ class ClientPrefs {
 	//Every key has two binds, add your key bind down here and then add your control on options/ControlsSubState.hx and Controls.hx
 	public static var keyBinds:Map<String, Array<FlxKey>> = [
 		//Key Bind, Name for ControlsSubState
-		'note_up'		=> [W, UP],
-		'note_left'		=> [A, LEFT],
-		'note_down'		=> [S, DOWN],
-		'note_right'	=> [D, RIGHT],
+		'note_up'		=> [D, UP],
+		'note_left'		=> [F, LEFT],
+		'note_down'		=> [J, DOWN],
+		'note_right'	=> [K, RIGHT],
+		'turn_left'		=> [A],
+		'turn_right'	=> [L],
 		
 		'ui_up'			=> [W, UP],
 		'ui_left'		=> [A, LEFT],

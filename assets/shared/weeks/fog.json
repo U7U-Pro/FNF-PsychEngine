@@ -1,0 +1,20 @@
+{
+	"songs": [
+		["Fog", "fog", [111, 111, 111]],
+	],
+
+	"weekCharacters": [
+		"fog",
+		"player",
+		""
+	],
+	"weekBackground": "fog",
+
+	"storyName": "Fog",
+	"weekBefore": "",
+	"weekName": "Fog",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

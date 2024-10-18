@@ -12,6 +12,9 @@ import lime.app.Application;
 import states.editors.MasterEditorMenu;
 import options.OptionsState;
 
+import backend.WeekData;
+import backend.Song;
+
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = 'The Fog'; // This is also used for Discord RPC
@@ -92,7 +95,9 @@ class MainMenuState extends MusicBeatState
 		var timeB:FlxTimer = new FlxTimer().start(3.1, moveOptions, 0);
 		moveOptions(timeB);
 		moveStart(timeA);
-		
+
+		FlxG.sound.music.kill();
+
 		super.create();
 	}
 
@@ -144,7 +149,21 @@ class MainMenuState extends MusicBeatState
 	}
 	
 	function gomenu(tween:FlxTween):Void{
-		MusicBeatState.switchState(new StoryMenuState());
+		try{
+			PlayState.storyPlaylist = ["fog"];
+			PlayState.isStoryMode = true;
+			WeekData.setDirectoryFromWeek(WeekData.weeksLoaded.get(WeekData.weeksList[0]));
+			PlayState.SONG = Song.loadFromJson("fog", "fog");
+		}catch(e:Dynamic){
+			trace('ERROR! $e');
+			return;
+		}
+		new FlxTimer().start(1, function(tmr:FlxTimer)
+			{						
+				LoadingState.loadAndSwitchState(new PlayState(), true);
+				FreeplayState.destroyFreeplayVocals();
+			});
+		MusicBeatState.switchState(new PlayState());
 	}
 	function goopt(tween:FlxTween):Void{
 		MusicBeatState.switchState(new OptionsState());

@@ -1,5 +1,6 @@
 package substates;
 
+import states.MainMenuState;
 import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
@@ -309,14 +310,14 @@ class PauseSubState extends MusicBeatSubstate
 					#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
+					FlxG.sound.destroy();
 
 					Mods.loadTopMod();
 					if(PlayState.isStoryMode)
-						MusicBeatState.switchState(new StoryMenuState());
+						MusicBeatState.switchState(new MainMenuState());
 					else 
-						MusicBeatState.switchState(new FreeplayState());
+						MusicBeatState.switchState(new MainMenuState());
 
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					PlayState.changedDifficulty = false;
 					PlayState.chartingMode = false;
 					FlxG.camera.followLerp = 0;
