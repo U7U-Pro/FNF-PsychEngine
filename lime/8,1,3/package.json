@@ -1,4 +1,7 @@
 {
   "name": "lime",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "lime": "file:"
+  }
 }

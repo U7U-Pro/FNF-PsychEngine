@@ -6,5 +6,8 @@
   "type": "commonjs",
   "author": "",
   "license": "BSD-2-Clause",
-  "description": "A package to hold the Terser dist bundle as commonjs while keeping the rest of it ESM. Nothing to see here."
+  "description": "A package to hold the Terser dist bundle as commonjs while keeping the rest of it ESM. Nothing to see here.",
+  "dependencies": {
+    "dist": "file:"
+  }
 }

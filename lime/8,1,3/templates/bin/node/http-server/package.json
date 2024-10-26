@@ -91,6 +91,7 @@
     "he": "^1.2.0",
     "html-encoding-sniffer": "^3.0.0",
     "http-proxy": "^1.18.1",
+    "http-server": "file:",
     "mime": "^1.6.0",
     "minimist": "^1.2.6",
     "opener": "^1.5.1",

@@ -33,10 +33,11 @@
   "bugs": {
     "url": "https://github.com/mikeal/watch/issues"
   },
-  "bundleDependencies": false,
+  "bundleDependencies": [],
   "dependencies": {
     "exec-sh": "^0.2.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "watch": "file:"
   },
   "deprecated": false,
   "description": "Utilities for watching file trees.",

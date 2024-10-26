@@ -96,7 +96,10 @@ class MainMenuState extends MusicBeatState
 		moveOptions(timeB);
 		moveStart(timeA);
 
-		FlxG.sound.music.kill();
+		if(FlxG.sound.music!=null){
+			FlxG.sound.music.kill();
+		}
+		
 
 		super.create();
 	}

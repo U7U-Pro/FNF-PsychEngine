@@ -132,7 +132,7 @@ class PlayState extends MusicBeatState
 	public var boyfriendGroup:FlxSpriteGroup;
 	public var dadGroup:FlxSpriteGroup;
 	public var gfGroup:FlxSpriteGroup;
-	public static var curStage:String = '';
+	public static var curStage:String = 'Fog';
 	public static var stageUI:String = "normal";
 	public static var isPixelStage(get, never):Bool;
 
@@ -327,15 +327,12 @@ class PlayState extends MusicBeatState
 		#end
 
 		GameOverSubstate.resetVariables();
-		songName = Paths.formatToSongPath(SONG.song);
-		if(SONG.stage == null || SONG.stage.length < 1) {
-			SONG.stage = StageData.vanillaSongStage(songName);
-		}
-		curStage = SONG.stage;
 
-		var stageData:StageFile = StageData.getStageFile(curStage);
+		var stageData:StageFile = StageData.getStageFile('fog');
+		trace("tried to load stage");
 		if(stageData == null) { //Stage couldn't be found, create a dummy stage for preventing a crash
 			stageData = StageData.dummy();
+			trace("didnt find stage");
 		}
 
 		defaultCamZoom = stageData.defaultZoom;
@@ -374,22 +371,7 @@ class PlayState extends MusicBeatState
 		dadGroup = new FlxSpriteGroup(DAD_X, DAD_Y);
 		gfGroup = new FlxSpriteGroup(GF_X, GF_Y);
 
-		switch (curStage)
-		{
-			case 'stage': new states.stages.StageWeek1(); //Week 1
-			case 'spooky': new states.stages.Spooky(); //Week 2
-			case 'philly': new states.stages.Philly(); //Week 3
-			case 'limo': new states.stages.Limo(); //Week 4
-			case 'mall': new states.stages.Mall(); //Week 5 - Cocoa, Eggnog
-			case 'mallEvil': new states.stages.MallEvil(); //Week 5 - Winter Horrorland
-			case 'school': new states.stages.School(); //Week 6 - Senpai, Roses
-			case 'schoolEvil': new states.stages.SchoolEvil(); //Week 6 - Thorns
-			case 'tank': new states.stages.Tank(); //Week 7 - Ugh, Guns, Stress
-		}
-
-		if(isPixelStage) {
-			introSoundsSuffix = '-pixel';
-		}
+		new states.stages.Fog();
 
 		add(gfGroup);
 		add(dadGroup);
@@ -425,17 +407,8 @@ class PlayState extends MusicBeatState
 
 		#if HSCRIPT_ALLOWED
 		startHScriptsNamed('stages/' + curStage + '.hx');
+		trace('loaded hx????? $curStage');
 		#end
-
-		if (!stageData.hide_girlfriend)
-		{
-			if(SONG.gfVersion == null || SONG.gfVersion.length < 1) SONG.gfVersion = 'gf'; //Fix for the Chart Editor
-			gf = new Character(0, 0, SONG.gfVersion);
-			startCharacterPos(gf);
-			gf.scrollFactor.set(0.95, 0.95);
-			gfGroup.add(gf);
-			startCharacterScripts(gf.curCharacter);
-		}
 
 		dad = new Character(0, 0, SONG.player2);
 		startCharacterPos(dad, true);
@@ -462,7 +435,7 @@ class PlayState extends MusicBeatState
 		stagesFunc(function(stage:BaseStage) stage.createPost());
 
 		comboGroup = new FlxSpriteGroup();
-		add(comboGroup);
+		//add(comboGroup);
 		noteGroup = new FlxTypedGroup<FlxBasic>();
 		add(noteGroup);
 		uiGroup = new FlxSpriteGroup();
@@ -484,8 +457,8 @@ class PlayState extends MusicBeatState
 		timeBar.screenCenter(X);
 		timeBar.alpha = 0;
 		timeBar.visible = showTime;
-		uiGroup.add(timeBar);
-		uiGroup.add(timeTxt);
+		//uiGroup.add(timeBar);
+		//uiGroup.add(timeTxt);
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		noteGroup.add(strumLineNotes);
@@ -532,19 +505,19 @@ class PlayState extends MusicBeatState
 		healthBar.visible = !ClientPrefs.data.hideHud;
 		healthBar.alpha = ClientPrefs.data.healthBarAlpha;
 		reloadHealthBarColors();
-		uiGroup.add(healthBar);
+		//uiGroup.add(healthBar);
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
 		iconP1.visible = !ClientPrefs.data.hideHud;
 		iconP1.alpha = ClientPrefs.data.healthBarAlpha;
-		uiGroup.add(iconP1);
+		//uiGroup.add(iconP1);
 
 		iconP2 = new HealthIcon(dad.healthIcon, false);
 		iconP2.y = healthBar.y - 75;
 		iconP2.visible = !ClientPrefs.data.hideHud;
 		iconP2.alpha = ClientPrefs.data.healthBarAlpha;
-		uiGroup.add(iconP2);
+		//uiGroup.add(iconP2);
 
 		scoreTxt = new FlxText(0, healthBar.y + 40, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -552,7 +525,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.borderSize = 1.25;
 		scoreTxt.visible = !ClientPrefs.data.hideHud;
 		updateScore(false);
-		uiGroup.add(scoreTxt);
+		//uiGroup.add(scoreTxt);
 
 		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -3174,14 +3147,16 @@ class PlayState extends MusicBeatState
 		#else
 		var scriptToLoad:String = Paths.getSharedPath(scriptFile);
 		#end
-
+		trace('trying to load $scriptToLoad');
 		if(FileSystem.exists(scriptToLoad))
 		{
 			if (SScript.global.exists(scriptToLoad)) return false;
-
+			trace('loaded $scriptToLoad');
 			initHScript(scriptToLoad);
+			
 			return true;
 		}
+		trace('didnt load $scriptToLoad');
 		return false;
 	}
 
