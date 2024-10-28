@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="fogg.png">
+<SubTexture name="fogg down0000" x="2849" y="797" width="418" height="781" frameX="-743" frameY="-275" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg down0001" x="1714" y="2670" width="511" height="720" frameX="-682" frameY="-340" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg down0002" x="2768" y="2670" width="526" height="690" frameX="-691" frameY="-365" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg down0003" x="2225" y="2670" width="543" height="693" frameX="-672" frameY="-337" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg idle0000" x="0" y="906" width="435" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg idle0001" x="1571" y="0" width="422" height="894" frameX="-744" frameY="-190" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg idle0002" x="504" y="1796" width="420" height="872" frameX="-744" frameY="-212" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg idle0003" x="924" y="1796" width="420" height="870" frameX="-744" frameY="-214" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg idle0004" x="1764" y="1796" width="401" height="857" frameX="-744" frameY="-227" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg idle0005" x="1344" y="1796" width="420" height="860" frameX="-744" frameY="-224" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg laugh0000" x="435" y="906" width="421" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg laugh0001" x="856" y="906" width="421" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg laugh0002" x="1277" y="906" width="421" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg laugh0003" x="1993" y="0" width="421" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg laugh0004" x="1993" y="890" width="421" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg laugh0005" x="2414" y="0" width="435" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg laugh0006" x="2414" y="890" width="435" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg left0000" x="2165" y="1796" width="452" height="838" frameX="-670" frameY="-246" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg left0001" x="2849" y="0" width="441" height="797" frameX="-680" frameY="-281" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg left0002" x="3290" y="781" width="464" height="757" frameX="-653" frameY="-327" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg left0003" x="1253" y="2670" width="461" height="728" frameX="-646" frameY="-326" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg right0000" x="3290" y="0" width="634" height="781" frameX="-659" frameY="-303" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg right0001" x="0" y="2670" width="638" height="746" frameX="-713" frameY="-327" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg right0002" x="3290" y="1538" width="632" height="734" frameX="-722" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg right0003" x="638" y="2670" width="615" height="733" frameX="-765" frameY="-351" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg up0000" x="499" y="0" width="537" height="895" frameX="-653" frameY="-174" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg up0001" x="0" y="0" width="499" height="906" frameX="-714" frameY="-147" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg up0002" x="1036" y="0" width="535" height="895" frameX="-704" frameY="-152" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fogg up0003" x="0" y="1796" width="504" height="874" frameX="-709" frameY="-165" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

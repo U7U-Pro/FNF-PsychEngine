@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-30
+			],
+			"indices": [],
+			"fps": 7,
+			"anim": "idle",
+			"loop": true,
+			"name": "fogg idle"
+		},
+		{
+			"offsets": [
+				0,
+				-30
+			],
+			"indices": [],
+			"fps": 7,
+			"anim": "laugh",
+			"loop": true,
+			"name": "fogg laugh"
+		},
+		{
+			"offsets": [
+				-30,
+				-70
+			],
+			"indices": [],
+			"fps": 18,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "fogg left"
+		},
+		{
+			"offsets": [
+				-30,
+				-90
+			],
+			"indices": [],
+			"fps": 18,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "fogg down"
+		},
+		{
+			"offsets": [
+				-20,
+				-80
+			],
+			"indices": [],
+			"fps": 18,
+			"anim": "singUP",
+			"loop": false,
+			"name": "fogg up"
+		},
+		{
+			"offsets": [
+				0,
+				-50
+			],
+			"indices": [],
+			"fps": 18,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "fogg right"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/fogg",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		101,
+		101,
+		101
+	],
+	"camera_position": [
+		-160,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

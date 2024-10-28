@@ -17,6 +17,10 @@ class Fog extends BaseStage
 	var righthand:FlxSprite;
 	var light:FlxSprite;
 	var stag:FlxSprite;
+
+	public var opf = 0;
+	public var plf = 0;
+
 	
 	
 	override function create()
@@ -44,6 +48,8 @@ class Fog extends BaseStage
 		add(light);
 		add(lefthand);
 		add(righthand);
+		addBehindDad(stag);
+		
 		
 	}
 
@@ -129,7 +135,10 @@ class Fog extends BaseStage
 	{
 		switch(eventName)
 		{
-			case "My Event":
+			case "Spin":
+				if(value1!=null){
+					
+				}
 		}
 	}
 	override function eventPushed(event:objects.Note.EventNote)

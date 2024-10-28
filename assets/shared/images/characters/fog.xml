@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="fog.png">
+<SubTexture name="fog down0000" x="2509" y="797" width="417" height="781" frameX="-744" frameY="-275" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog down0001" x="0" y="2561" width="511" height="720" frameX="-682" frameY="-340" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog down0002" x="1054" y="2561" width="526" height="690" frameX="-691" frameY="-365" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog down0003" x="511" y="2561" width="543" height="693" frameX="-672" frameY="-337" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog idle0000" x="1699" y="0" width="421" height="890" frameX="-729" frameY="-194" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog idle0001" x="1285" y="0" width="414" height="894" frameX="-752" frameY="-190" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog idle0002" x="455" y="906" width="407" height="872" frameX="-744" frameY="-212" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog idle0003" x="862" y="906" width="412" height="870" frameX="-745" frameY="-214" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog idle0004" x="1662" y="906" width="379" height="857" frameX="-766" frameY="-227" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog idle0005" x="1274" y="906" width="388" height="860" frameX="-750" frameY="-224" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog left0000" x="2120" y="0" width="389" height="838" frameX="-733" frameY="-246" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog left0001" x="2509" y="0" width="438" height="797" frameX="-683" frameY="-281" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog left0002" x="457" y="1780" width="464" height="757" frameX="-653" frameY="-327" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog left0003" x="2947" y="0" width="445" height="728" frameX="-662" frameY="-326" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog right0000" x="0" y="1780" width="457" height="781" frameX="-770" frameY="-303" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog right0001" x="921" y="1780" width="536" height="746" frameX="-784" frameY="-327" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog right0002" x="1457" y="1780" width="579" height="734" frameX="-763" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog right0003" x="2036" y="1780" width="591" height="733" frameX="-767" frameY="-351" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog up0000" x="414" y="0" width="402" height="895" frameX="-736" frameY="-174" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog up0001" x="0" y="0" width="414" height="906" frameX="-799" frameY="-147" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog up0002" x="816" y="0" width="469" height="895" frameX="-770" frameY="-152" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="fog up0003" x="0" y="906" width="455" height="874" frameX="-758" frameY="-165" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>
