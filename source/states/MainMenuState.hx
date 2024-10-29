@@ -23,6 +23,7 @@ class MainMenuState extends MusicBeatState
 	var logo = new FlxSprite();
 	var start:FlxSprite = new FlxSprite(0, 0); // 
 	var options:FlxSprite = new FlxSprite(0, 0); // 
+	var bg:FlxSprite= new FlxSprite(0,0);
 
 	var optionShit:Array<String> = [
 		'story_mode',
@@ -49,12 +50,11 @@ class MainMenuState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
-		bg.antialiasing = ClientPrefs.data.antialiasing;
-
-		bg.setGraphicSize(Std.int(bg.width * 1.175));
-		bg.updateHitbox();
+		bg.frames = Paths.getSparrowAtlas('bgfog');
 		bg.screenCenter();
+		bg.animation.addByPrefix('play', 'fog', 4);
+		bg.animation.play('play');
+
 		//bg.shader = new Fog();
 		add(bg);
 
@@ -65,7 +65,7 @@ class MainMenuState extends MusicBeatState
 		magenta.screenCenter();
 		magenta.visible = false;
 		magenta.color = 0xFFfd719b;
-		add(magenta);
+		//add(magenta);
 
 		start.x = random(0, FlxG.width-410);
 		start.y = random(0, FlxG.height-150);

@@ -9,7 +9,7 @@ import states.TitleState;
 // Add a variable here and it will get automatically saved
 @:structInit class SaveVariables {
 	public var downScroll:Bool = false;
-	public var middleScroll:Bool = false;
+	public var middleScroll:Bool = true;
 	public var opponentStrums:Bool = true;
 	public var showFPS:Bool = false;
 	public var flashing:Bool = true;
@@ -26,10 +26,10 @@ import states.TitleState;
 	public var hideHud:Bool = false;
 	public var noteOffset:Int = 0;
 	public var arrowRGB:Array<Array<FlxColor>> = [
-		[0xFFC24B99, 0xFFFFFFFF, 0xFF3C1F56],
-		[0xFF00FFFF, 0xFFFFFFFF, 0xFF1542B7],
-		[0xFF12FA05, 0xFFFFFFFF, 0xFF0A4447],
-		[0xFFF9393F, 0xFFFFFFFF, 0xFF651038]];
+		[0xFF6D6D6D, 0xFFFFFFFF, 0xFF333333],
+		[0xFF6D6D6D, 0xFFFFFFFF, 0xFF333333],
+		[0xFF6D6D6D, 0xFFFFFFFF, 0xFF333333],
+		[0xFF6D6D6D, 0xFFFFFFFF, 0xFF333333]];
 	public var arrowRGBPixel:Array<Array<FlxColor>> = [
 		[0xFFE276FF, 0xFFFFF9FF, 0xFF60008D],
 		[0xFF3DCAFF, 0xFFF4FFFF, 0xFF003060],
@@ -39,12 +39,13 @@ import states.TitleState;
 	public var ghostTapping:Bool = true;
 	public var timeBarType:String = 'Time Left';
 	public var scoreZoom:Bool = true;
-	public var noReset:Bool = false;
+	public var noReset:Bool = true;
 	public var healthBarAlpha:Float = 1;
 	public var hitsoundVolume:Float = 0;
 	public var pauseMusic:String = 'Tea Time';
 	public var checkForUpdates:Bool = false;
 	public var comboStacking:Bool = true;
+	public var pussy:Bool = false;
 	public var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative', 
@@ -113,6 +114,8 @@ class ClientPrefs {
 		'note_left'		=> [DPAD_LEFT, X],
 		'note_down'		=> [DPAD_DOWN, A],
 		'note_right'	=> [DPAD_RIGHT, B],
+		'turn_left'		=> [LEFT_SHOULDER],
+		'turn_right'	=> [RIGHT_SHOULDER],
 		
 		'ui_up'			=> [DPAD_UP, LEFT_STICK_DIGITAL_UP],
 		'ui_left'		=> [DPAD_LEFT, LEFT_STICK_DIGITAL_LEFT],

@@ -18,30 +18,25 @@ class ControlsSubState extends MusicBeatSubstate
 	//Show on gamepad - Display name - Save file key - Rebind display name
 	var options:Array<Dynamic> = [
 		[true, 'NOTES'],
+		[true, 'I GOT TOO LAZY TO CHANGE'],
+		[true, 'THIS MENU OK'],
 		[true, 'Left', 'note_left', 'Note Left'],
 		[true, 'Down', 'note_down', 'Note Down'],
 		[true, 'Up', 'note_up', 'Note Up'],
 		[true, 'Right', 'note_right', 'Note Right'],
+		[true, 'Turn Left', 'turn_left', 'Turn Left'],
+		[true, 'Turn Right', 'turn_right', 'Turn Right'],
 		[true],
 		[true, 'UI'],
 		[true, 'Left', 'ui_left', 'UI Left'],
 		[true, 'Down', 'ui_down', 'UI Down'],
 		[true, 'Up', 'ui_up', 'UI Up'],
 		[true, 'Right', 'ui_right', 'UI Right'],
-		[true],
-		[true, 'Reset', 'reset', 'Reset'],
-		[true, 'Accept', 'accept', 'Accept'],
-		[true, 'Back', 'back', 'Back'],
-		[true, 'Pause', 'pause', 'Pause'],
 		[false],
 		[false, 'VOLUME'],
 		[false, 'Mute', 'volume_mute', 'Volume Mute'],
 		[false, 'Up', 'volume_up', 'Volume Up'],
 		[false, 'Down', 'volume_down', 'Volume Down'],
-		[false],
-		[false, 'DEBUG'],
-		[false, 'Key 1', 'debug_1', 'Debug Key #1'],
-		[false, 'Key 2', 'debug_2', 'Debug Key #2']
 	];
 	var curOptions:Array<Int>;
 	var curOptionsValid:Array<Int>;

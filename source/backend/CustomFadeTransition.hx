@@ -26,6 +26,7 @@ class CustomFadeTransition extends MusicBeatSubstate {
 		transGradient.updateHitbox();
 		transGradient.scrollFactor.set();
 		transGradient.screenCenter(X);
+		transGradient.alpha=0;
 		add(transGradient);
 
 		transBlack = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);
@@ -33,6 +34,7 @@ class CustomFadeTransition extends MusicBeatSubstate {
 		transBlack.updateHitbox();
 		transBlack.scrollFactor.set();
 		transBlack.screenCenter(X);
+		transBlack.alpha=0;
 		add(transBlack);
 
 		if(isTransIn)

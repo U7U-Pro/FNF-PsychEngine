@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bgfog.png">
+	<!-- Created with Adobe Animate version 22.0.4.185 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fog0000" x="3" y="3" width="1920" height="1080"/>
+	<SubTexture name="fog0001" x="1928" y="3" width="1920" height="1080"/>
+	<SubTexture name="fog0002" x="3853" y="3" width="1920" height="1080"/>
+	<SubTexture name="fog0003" x="5778" y="3" width="1920" height="1080"/>
+	<SubTexture name="fog0004" x="3" y="1088" width="1920" height="1080"/>
+	<SubTexture name="fog0005" x="1928" y="1088" width="1920" height="1080"/>
+	<SubTexture name="fog0006" x="3853" y="1088" width="1920" height="1080"/>
+	<SubTexture name="fog0007" x="5778" y="1088" width="1920" height="1080"/>
+	<SubTexture name="fog0008" x="3" y="2173" width="1920" height="1080"/>
+	<SubTexture name="fog0009" x="1928" y="2173" width="1920" height="1080"/>
+	<SubTexture name="fog0010" x="3853" y="2173" width="1920" height="1080"/>
+	<SubTexture name="fog0011" x="5778" y="2173" width="1920" height="1080"/>
+	<SubTexture name="fog0012" x="3" y="3258" width="1920" height="1080"/>
+	<SubTexture name="fog0013" x="1928" y="3258" width="1920" height="1080"/>
+	<SubTexture name="fog0014" x="3853" y="3258" width="1920" height="1080"/>
+	<SubTexture name="fog0015" x="5778" y="3258" width="1920" height="1080"/>
+</TextureAtlas>

@@ -1243,6 +1243,7 @@ class PlayState extends MusicBeatState
 				
 				var oppVocals = Paths.voices(songData.song, (dad.vocalsFile == null || dad.vocalsFile.length < 1) ? 'Opponent' : dad.vocalsFile);
 				if(oppVocals != null) opponentVocals.loadEmbedded(oppVocals);
+				opponentVocals.volume=0;
 			}
 		}
 		catch(e:Dynamic) {}
@@ -1619,6 +1620,11 @@ class PlayState extends MusicBeatState
 			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
 		}
 
+		if(!ClientPrefs.data.pussy){
+			instakillOnMiss=true;
+		} else{
+			instakillOnMiss=false;
+		}
 		/*if (controls.PAUSE && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnScripts('onPause', null, true);
@@ -1776,7 +1782,7 @@ class PlayState extends MusicBeatState
 		setOnScripts('botPlay', cpuControlled);
 		callOnScripts('onUpdatePost', [elapsed]);
 	}
-
+	
 	// Health icon updaters
 	public dynamic function updateIconsScale(elapsed:Float)
 	{
