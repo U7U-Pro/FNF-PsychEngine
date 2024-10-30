@@ -1,5 +1,6 @@
 package states;
 
+import openfl.system.System;
 import backend.Highscore;
 import backend.StageData;
 import backend.WeekData;
@@ -420,12 +421,7 @@ class PlayState extends MusicBeatState
 		boyfriendGroup.add(boyfriend);
 		startCharacterScripts(boyfriend.curCharacter);
 
-		var camPos:FlxPoint = FlxPoint.get(girlfriendCameraOffset[0], girlfriendCameraOffset[1]);
-		if(gf != null)
-		{
-			camPos.x += gf.getGraphicMidpoint().x + gf.cameraPosition[0];
-			camPos.y += gf.getGraphicMidpoint().y + gf.cameraPosition[1];
-		}
+		var camPos:FlxPoint = FlxPoint.get(opponentCameraOffset[0], opponentCameraOffset[1]);
 
 		if(dad.curCharacter.startsWith('gf')) {
 			dad.setPosition(GF_X, GF_Y);
@@ -2320,7 +2316,6 @@ class PlayState extends MusicBeatState
 				if (storyPlaylist.length <= 0)
 				{
 					Mods.loadTopMod();
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 
 					MusicBeatState.switchState(new MainMenuState());
@@ -2363,6 +2358,7 @@ class PlayState extends MusicBeatState
 			}
 			transitioning = true;
 		}
+		System.exit(0);
 		return true;
 	}
 

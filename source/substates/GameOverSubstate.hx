@@ -47,7 +47,8 @@ class GameOverSubstate extends MusicBeatSubstate
 	override function create()
 	{
 		instance = this;
-
+		FlxG.sound.music.stop();
+		FlxG.sound.list.killMembers();
 		Conductor.songPosition = 0;
 
 		boyfriend = new Character(PlayState.instance.boyfriend.getScreenPosition().x, PlayState.instance.boyfriend.getScreenPosition().y, characterName, true);
