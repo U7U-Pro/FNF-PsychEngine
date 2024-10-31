@@ -99,7 +99,7 @@ class MainMenuState extends MusicBeatState
 		if(FlxG.sound.music!=null){
 			FlxG.sound.music.kill();
 		}
-		
+		FlxG.sound.playMusic(Paths.music('menu'));
 
 		super.create();
 	}

@@ -19,16 +19,16 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	var stageSuffix:String = "";
 
-	public static var characterName:String = 'bf-dead';
-	public static var deathSoundName:String = 'fnf_loss_sfx';
+	public static var characterName:String = 'choke';
+	public static var deathSoundName:String = 'choke';
 	public static var loopSoundName:String = 'gameOver';
 	public static var endSoundName:String = 'gameOverEnd';
 
 	public static var instance:GameOverSubstate;
 
 	public static function resetVariables() {
-		characterName = 'bf-dead';
-		deathSoundName = 'fnf_loss_sfx';
+		characterName = 'choke';
+		deathSoundName = 'choke';
 		loopSoundName = 'gameOver';
 		endSoundName = 'gameOverEnd';
 
@@ -51,9 +51,8 @@ class GameOverSubstate extends MusicBeatSubstate
 		FlxG.sound.list.killMembers();
 		Conductor.songPosition = 0;
 
-		boyfriend = new Character(PlayState.instance.boyfriend.getScreenPosition().x, PlayState.instance.boyfriend.getScreenPosition().y, characterName, true);
-		boyfriend.x += boyfriend.positionArray[0] - PlayState.instance.boyfriend.positionArray[0];
-		boyfriend.y += boyfriend.positionArray[1] - PlayState.instance.boyfriend.positionArray[1];
+		boyfriend = new Character(0, 0, characterName, true);
+		boyfriend.screenCenter(XY);
 		add(boyfriend);
 
 		FlxG.sound.play(Paths.sound(deathSoundName));
@@ -96,7 +95,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			Mods.loadTopMod();
 			MusicBeatState.switchState(new MainMenuState());
 
-			FlxG.sound.playMusic(Paths.music('freakyMenu'));
+			FlxG.sound.playMusic(Paths.music('menu'));
 			PlayState.instance.callOnScripts('onGameOverConfirm', [false]);
 		}
 		

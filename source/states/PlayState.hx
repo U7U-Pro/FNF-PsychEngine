@@ -1586,9 +1586,9 @@ class PlayState extends MusicBeatState
 	public var paused:Bool = false;
 	public var canReset:Bool = true;
 	var startedCountdown:Bool = false;
-	var canPause:Bool = true;
+	var canPause:Bool = false;
 	var freezeCamera:Bool = false;
-	var allowDebugKeys:Bool = true;
+	var allowDebugKeys:Bool = false;
 
 	override public function update(elapsed:Float)
 	{
@@ -2190,7 +2190,7 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		var isDad:Bool = (SONG.notes[sec].mustHitSection != true);
+		var isDad:Bool = false;//(SONG.notes[sec].mustHitSection != true);
 		moveCamera(isDad);
 		callOnScripts('onMoveCamera', [isDad ? 'dad' : 'boyfriend']);
 	}
@@ -3169,7 +3169,7 @@ class PlayState extends MusicBeatState
 			var newScript:HScript = new HScript(null, file);
 			if(newScript.parsingException != null)
 			{
-				addTextToDebug('ERROR ON LOADING: ${newScript.parsingException.message}', FlxColor.RED);
+				//addTextToDebug('ERROR ON LOADING: ${newScript.parsingException.message}', FlxColor.RED);
 				newScript.destroy();
 				return;
 			}

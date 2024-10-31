@@ -15,8 +15,8 @@ class Fog extends BaseStage
 	
 	public var lx = 200;
 	public var ly = 500;
-	public var rx = 800;
-	public var ry = 300;
+	public var rx = 900;
+	public var ry = 400;
 	var lefthand:FlxSprite;
 	var righthand:FlxSprite;
 	var light:FlxSprite;
@@ -39,7 +39,7 @@ class Fog extends BaseStage
 	public var canTurn:Bool = true;
 
 	var score:Int;
-	
+	public var shit=0;
 
 	public var controls(get, never):Controls;
     private function get_controls()
@@ -111,6 +111,7 @@ class Fog extends BaseStage
 		light.camera = game.camHUD;
 		light.blend = "screen";
 		light.alpha = 0.4;
+		light.setGraphicSize(Std.int(light.width*0.7), Std.int(light.height*0.7));
 		game.dadGroup.blend = "darken";
 		add(light);
 		add(lefthand);
@@ -121,6 +122,8 @@ class Fog extends BaseStage
 		addBehindDad(foggy);
 		addBehindDad(foggyl);
 		addBehindDad(foggyr);
+		boyfriendGroup.alpha=0;
+		resetBg(FlxTween.tween(light, {}, 0));
 	}
 
 	override function update(elapsed:Float)
@@ -136,7 +139,7 @@ class Fog extends BaseStage
 				FlxTween.tween(stag, { x: stag.x+stag.width }, 0.4, { ease: FlxEase.expoInOut, onComplete: resetBg});
 				FlxTween.tween(stagl, { x: stagl.x+stagl.width }, 0.4, { ease: FlxEase.expoInOut});
 				FlxTween.tween(dadGroup, {x:dadGroup.x+stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
-				trace('left $plf');
+				//trace('left $plf');
 			}
 			else{
 				GameOverSubstate.characterName = "brokenneck";
@@ -152,7 +155,7 @@ class Fog extends BaseStage
 				FlxTween.tween(stag, { x: stag.x-stag.width }, 0.4, { ease: FlxEase.expoInOut, onComplete: resetBg});
 				FlxTween.tween(stagr, { x: stagr.x-stagr.width }, 0.4, { ease: FlxEase.expoInOut});
 				FlxTween.tween(dadGroup, {x:dadGroup.x-stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
-				trace('right $plf');
+				//trace('right $plf');
 			}
 			else{
 				GameOverSubstate.characterName = "brokenneck";
@@ -161,19 +164,19 @@ class Fog extends BaseStage
 		}
 		rupd();
 
-		if(controls.NOTE_DOWN_P){
+		if(controls.NOTE_DOWN){
 			righthand.animation.play('down');
 		}
-		if(controls.NOTE_LEFT_P){
+		if(controls.NOTE_LEFT){
 			righthand.animation.play('left');
 		}
-		if(controls.NOTE_RIGHT_P){
+		if(controls.NOTE_RIGHT){
 			righthand.animation.play('right');
 		}
-		if(controls.NOTE_UP_P){
+		if(controls.NOTE_UP){
 			righthand.animation.play('up');
 		}
-		if(controls.NOTE_DOWN_R || controls.NOTE_LEFT_R || controls.NOTE_RIGHT_R || controls.NOTE_UP_R){
+		if(controls.NOTE_DOWN_R  || controls.NOTE_LEFT_R || controls.NOTE_RIGHT_R || controls.NOTE_UP_R){
 			righthand.animation.play('idle');
 		}
 	}
@@ -232,6 +235,8 @@ class Fog extends BaseStage
 	}
 
 	public function resetBg(tween:FlxTween) {
+		trace('reset bg');
+		
 		stag.x=0;
 		stagl.x=stag.x-stag.width;
 		stagr.x=stag.x+stag.width;
@@ -239,20 +244,29 @@ class Fog extends BaseStage
 		foggyl.x=foggy.x-foggy.width;
 		foggyr.x=foggy.x+foggy.width;
 		canTurn=true;
+		
+		trace('bgs:');
+		trace(stagl.x);
+		trace(stag.x);
+		trace(stagr.x);
+		trace('fogs:');
+		trace(foggyl.x);
+		trace(foggy.x);
+		trace(foggyr.x);
 	}
 
 
 	function moveleft(timer:FlxTimer){
-		var newx = random(lx-100, lx+100);
-		var newy = random(ly-100, ly+100);
+		var newx = random(lx-50, lx+50);
+		var newy = random(ly-50, ly+50);
 		if(random(1,5)>3){
 			FlxTween.tween(lefthand, { x: newx, y: newy }, 2.0, { ease: FlxEase.expoInOut });
 		}
 	}
 
 	function moveright(timer:FlxTimer){
-		var newx = random(rx-100, rx+100);
-		var newy = random(ry-100, ry+100);
+		var newx = random(rx-50, rx+50);
+		var newy = random(ry-50, ry+50);
 		if(random(1,5)>3){
 			FlxTween.tween(righthand, { x: newx, y: newy }, 2.0, { ease: FlxEase.expoInOut });
 		}
@@ -290,12 +304,12 @@ class Fog extends BaseStage
 	override function beatHit()
 	{
 		if(curBeat==96){
-			
+			shit=1;
 		}
 	}
 	override function sectionHit()
 	{
-		trace(poop);
+		//trace(poop);
 
 	}
 
