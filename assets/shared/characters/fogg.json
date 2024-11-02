@@ -19,7 +19,7 @@
 			"indices": [],
 			"fps": 7,
 			"anim": "laugh",
-			"loop": true,
+			"loop": false,
 			"name": "fogg laugh"
 		},
 		{
@@ -82,7 +82,7 @@
 		101
 	],
 	"camera_position": [
-		-160,
+		-200,
 		0
 	],
 	"sing_duration": 4,

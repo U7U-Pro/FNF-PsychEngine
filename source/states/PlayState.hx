@@ -404,11 +404,11 @@ class PlayState extends MusicBeatState
 		// STAGE SCRIPTS
 		#if LUA_ALLOWED
 		startLuasNamed('stages/' + curStage + '.lua');
+		startLuasNamed('stages/cameraMovement.lua');
 		#end
 
 		#if HSCRIPT_ALLOWED
 		startHScriptsNamed('stages/' + curStage + '.hx');
-		trace('loaded hx????? $curStage');
 		#end
 
 		dad = new Character(0, 0, SONG.player2);
@@ -1629,14 +1629,6 @@ class PlayState extends MusicBeatState
 			}
 		}*/
 
-		if(!endingSong && !inCutscene && allowDebugKeys)
-		{
-			if (controls.justPressed('debug_1'))
-				openChartEditor();
-			else if (controls.justPressed('debug_2'))
-				openCharacterEditor();
-		}
-
 		if (healthBar.bounds.max != null && health > healthBar.bounds.max)
 			health = healthBar.bounds.max;
 
@@ -2358,7 +2350,8 @@ class PlayState extends MusicBeatState
 			}
 			transitioning = true;
 		}
-		System.exit(0);
+		GameOverSubstate.characterName="endsong";
+		health=0;
 		return true;
 	}
 
@@ -3149,16 +3142,13 @@ class PlayState extends MusicBeatState
 		#else
 		var scriptToLoad:String = Paths.getSharedPath(scriptFile);
 		#end
-		trace('trying to load $scriptToLoad');
 		if(FileSystem.exists(scriptToLoad))
 		{
 			if (SScript.global.exists(scriptToLoad)) return false;
-			trace('loaded $scriptToLoad');
 			initHScript(scriptToLoad);
 			
 			return true;
 		}
-		trace('didnt load $scriptToLoad');
 		return false;
 	}
 

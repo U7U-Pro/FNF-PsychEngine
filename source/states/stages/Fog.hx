@@ -1,5 +1,14 @@
 package states.stages;
 
+import backend.Song;
+import backend.Song.SwagSong;
+import flixel.addons.plugin.taskManager.FlxTask;
+import objects.Note;
+import objects.StrumNote;
+import psychlua.FunkinLua;
+import openfl.filters.ShaderFilter;
+import shaders.OverlayShader;
+import flixel.tweens.misc.VarTween;
 import substates.GameOverSubstate;
 import haxe.Timer;
 import flixel.system.FlxAssets.FlxGraphicAsset;
@@ -26,6 +35,10 @@ class Fog extends BaseStage
 	var foggy:FlxSprite;
 	var foggyl:FlxSprite;
 	var foggyr:FlxSprite;
+	var behind:FlxSprite = new FlxSprite(200, 300, Paths.image('behind'));
+	var you:FlxSprite = new FlxSprite(600, 500, Paths.image('you'));
+	var turn:FlxSprite = new FlxSprite(600, 100, Paths.image('turn'));
+	var around:FlxSprite = new FlxSprite(200, 500, Paths.image('around'));
 
 	var leftvocs:FlxSound = new FlxSound();
 	var rightvocs:FlxSound = new FlxSound(); 
@@ -38,17 +51,34 @@ class Fog extends BaseStage
 
 	public var canTurn:Bool = true;
 
-	var score:Int;
-	public var shit=0;
+	var t1:FlxTween; 
+	var t2:FlxTween;
+	var t3:FlxTween;
+	var t4:FlxTween;
+	var t5:FlxTween;
+	var t6:FlxTween;
+	var t7:FlxTween;
 
 	public var controls(get, never):Controls;
     private function get_controls()
     {
         return Controls.instance;
     }
+
+	var camMovement = 30;
+	var velocity = 2;
+
+	var campointx = 0;
+	var campointy = 0;
+	var camlockx = 0;
+	var camlocky = 0;
+	var camlock = false;
+	var bfturn = false;
+	var camon = true;
 	
 	override function create()
 	{
+		
 		lefthand = new FlxSprite(lx, ly, Paths.image("lefthand"));
 		lefthand.setGraphicSize(Std.int(lefthand.width*0.7), Std.int(lefthand.height*0.7));
 		lefthand.updateHitbox();
@@ -62,12 +92,12 @@ class Fog extends BaseStage
 		righthand.animation.play('idle');
 		righthand.setGraphicSize(Std.int(righthand.width*0.7), Std.int(righthand.height*0.7));
 		righthand.updateHitbox();
-		light = new FlxSprite(lx+311, ly-419, Paths.image("lightbeam"));
+		light = new FlxSprite(lx+217, ly-293, Paths.image("lightbeam"));
 		
 		stag = new FlxSprite(0,0,Paths.image("bg"));
-		stagl=stag;
+		stagl=stag.clone();
 		stagl.x=stag.x-stag.width;
-		stagr=stag;
+		stagr=stag.clone();
 		stagr.x=stag.x+stag.width;
 		foggy = new FlxSprite(0,0);
 		foggy.frames = Paths.getSparrowAtlas("bgfog");
@@ -75,11 +105,21 @@ class Fog extends BaseStage
 		foggy.animation.play('idle');
 		foggy.blend = "add";
 		foggy.alpha = 0.7;
-		foggyl=foggy;
-		foggyr=foggy;
+		foggyl=foggy.clone();
+		foggyr=foggy.clone();
 		foggyl.x=foggy.x-foggy.width;
 		foggyr.x=foggy.x-foggy.width;
 		trace("loaded fog stage");
+
+		behind.camera = game.camHUD;
+		you.camera = game.camHUD;
+		turn.camera = game.camHUD;
+		around.camera = game.camHUD;
+		behind.alpha=0;
+		you.alpha=0;
+		turn.alpha=0;
+		around.alpha=0;
+
 		// Spawn your stage sprites here.
 		// Characters are not ready yet on this function, so you can't add things above them yet.
 		// Use createPost() if that's what you want to do.
@@ -101,6 +141,22 @@ class Fog extends BaseStage
 		backvocs.volume=0;
 		frontvocs.volume=0;
 
+		stag.camera = game.camGame;
+		stagl.camera = game.camGame;
+		stagr.camera = game.camGame;
+		foggy.camera = game.camGame;
+		foggyl.camera = game.camGame;
+		foggyr.camera = game.camGame;
+		add(stag);
+		add(stagr);
+		add(stagl);
+		add(foggy);
+		add(foggyl);
+		add(foggyr);
+
+		game.startLuasNamed('Fog');
+		game.startLuasNamed('cameraMovement');
+
 	}
 	
 	override function createPost()
@@ -109,6 +165,7 @@ class Fog extends BaseStage
 		lefthand.camera = game.camHUD;
 		righthand.camera = game.camHUD;
 		light.camera = game.camHUD;
+
 		light.blend = "screen";
 		light.alpha = 0.4;
 		light.setGraphicSize(Std.int(light.width*0.7), Std.int(light.height*0.7));
@@ -116,20 +173,19 @@ class Fog extends BaseStage
 		add(light);
 		add(lefthand);
 		add(righthand);
-		addBehindDad(stag);
-		addBehindDad(stagr);
-		addBehindDad(stagl);
-		addBehindDad(foggy);
-		addBehindDad(foggyl);
-		addBehindDad(foggyr);
+		add(behind);
+		add(you);
+		add(turn);
+		add(around);
+		
 		boyfriendGroup.alpha=0;
 		resetBg(FlxTween.tween(light, {}, 0));
 	}
 
 	override function update(elapsed:Float)
 	{
-		light.x = lefthand.x+Std.int(311*0.7);
-		light.y = lefthand.y-Std.int(419*0.7);
+		light.x = lefthand.x+140;
+		light.y = lefthand.y-350;
 		if(controls.justPressed('turn_left')){
 			if(canTurn){ //YOU TURN LEFT SHIT GOES RIGHT
 				plf=(plf+3)%4;
@@ -138,11 +194,14 @@ class Fog extends BaseStage
 				FlxTween.tween(foggyl, { x: foggyl.x+foggyl.width }, 0.4, { ease: FlxEase.expoInOut});
 				FlxTween.tween(stag, { x: stag.x+stag.width }, 0.4, { ease: FlxEase.expoInOut, onComplete: resetBg});
 				FlxTween.tween(stagl, { x: stagl.x+stagl.width }, 0.4, { ease: FlxEase.expoInOut});
-				FlxTween.tween(dadGroup, {x:dadGroup.x+stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
-				//trace('left $plf');
+				t1 = FlxTween.tween(dadGroup, {x:dadGroup.x+stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
+				t1.start();
+				FlxTween.tween(lefthand, {x:lefthand.x+1000}, 0.3, {ease: FlxEase.expoInOut, onComplete: resethands});
+				FlxTween.tween(righthand, {x:righthand.x+1000}, 0.3, {ease: FlxEase.expoInOut});
 			}
 			else{
 				GameOverSubstate.characterName = "brokenneck";
+				GameOverSubstate.deathSoundName = "brokenneck";
 				game.health=0;
 			}
 		}
@@ -154,16 +213,40 @@ class Fog extends BaseStage
 				FlxTween.tween(foggyr, { x: foggyr.x-foggyr.width }, 0.4, { ease: FlxEase.expoInOut});
 				FlxTween.tween(stag, { x: stag.x-stag.width }, 0.4, { ease: FlxEase.expoInOut, onComplete: resetBg});
 				FlxTween.tween(stagr, { x: stagr.x-stagr.width }, 0.4, { ease: FlxEase.expoInOut});
-				FlxTween.tween(dadGroup, {x:dadGroup.x-stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
-				//trace('right $plf');
+				t2 = FlxTween.tween(dadGroup, {x:dadGroup.x-stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
+				t2.start();
+				FlxTween.tween(lefthand, {x:lefthand.x-1000}, 0.3, {ease: FlxEase.expoInOut, onComplete: resethands});
+				FlxTween.tween(righthand, {x:righthand.x-1000}, 0.3, {ease: FlxEase.expoInOut});
 			}
 			else{
 				GameOverSubstate.characterName = "brokenneck";
+				GameOverSubstate.deathSoundName = "brokenneck";
 				game.health=0;
 			}
 		}
 		rupd();
+		
 
+		if(controls.NOTE_DOWN_P){
+			if(righthand.y<ry+50){
+				FlxTween.tween(righthand, {y: righthand.y+40},0.1,{ease:FlxEase.expoInOut});
+			}
+		}
+		if(controls.NOTE_LEFT_P){
+			if(righthand.x>rx-50){
+				FlxTween.tween(righthand, {x: righthand.x-40},0.1,{ease:FlxEase.expoInOut});
+			}
+		}
+		if(controls.NOTE_RIGHT_P){
+			if(righthand.x<rx+50){
+				FlxTween.tween(righthand, {x: righthand.x+40},0.1,{ease:FlxEase.expoInOut});
+			}
+		}
+		if(controls.NOTE_UP_P){
+			if(righthand.y>ry-50){
+				FlxTween.tween(righthand, {y: righthand.y-40},0.1,{ease:FlxEase.expoInOut});
+			}
+		}
 		if(controls.NOTE_DOWN){
 			righthand.animation.play('down');
 		}
@@ -179,19 +262,91 @@ class Fog extends BaseStage
 		if(controls.NOTE_DOWN_R  || controls.NOTE_LEFT_R || controls.NOTE_RIGHT_R || controls.NOTE_UP_R){
 			righthand.animation.play('idle');
 		}
+		if(!isTweening()){
+			checkDadLoc();
+		}
+
+		var fuckme:Array<StrumNote> = game.opponentStrums.members;
+		for (strum in fuckme)
+			{
+				strum.cameras = [game.camGame];
+				strum.scrollFactor.set(1, 1);
+			}
+		for (i in 0...game.opponentStrums.length) {
+			game.opponentStrums.members[i].x=dadGroup.x+930+(i-2)*105;
+		}
+	
+		var fuckyou:Array<Note> = game.unspawnNotes;
+		for (i in 0...fuckyou.length) {
+			if (!fuckyou[i].mustPress) {
+				fuckyou[i].cameras = [game.camGame];
+				fuckyou[i].scrollFactor.set(1, 1);
+			} 
+		}
+
+		if (camlock && camon) {
+            camFollow.x=camlockx;
+            camFollow.y=camlocky;
+        }
+
 	}
 
+	public function isTweening() {
+		@:privateAccess var tweens = FlxTween.globalManager._tweens;
+		
+        for (i in 0...tweens.length)
+        {
+            var tween = tweens[i];
+            @:privateAccess if (tween.isTweenOf(game.dadGroup)){
+				var varTween:VarTween = cast tween;
+				var target = varTween._object;
+				var fields = Reflect.fields(varTween._properties);
+                return true;
+			}
+        }
+		return false;
+		
+	}
+public var colArray:Array<String> = ['purple', 'blue', 'green', 'red'];
+	public function goodNoteHit(note:Note) {
+		if(bfturn){
+			switch (colArray[note.noteData % colArray.length]) {
+				case 'purple':
+					camlockx = campointx - camMovement;
+					camlocky = campointy;
+				case 'blue':
+					camlocky = campointy + camMovement;
+					camlockx = campointx;
+				case 'green':
+					camlocky = campointy - camMovement;
+					camlockx = campointx;
+				case 'red':
+					camlockx = campointx + camMovement;
+					camlocky = campointy;
+			}
+			new FlxTimer().start(1, camreset);
+			game.cameraSpeed = velocity;
+			camlock =true;
+		}
+	}
 
-	public function checkDadLoc(tween:FlxTween){
+	public function camreset(timer:FlxTimer){
+		camlock=false;
+		game.cameraSpeed = 1;
+		camFollow.x=campointx;
+		camFollow.y=campointy;
+	}
+
+	public function checkDadLoc(?tween:FlxTween){
 		switch(poop){
 			case "front":
-				dadGroup.x=stag.x;
+				dadGroup.x=0;
 			case "left":
-				dadGroup.x=-1*stag.width;
+				dadGroup.x=-1920;
 			case "right":
-				dadGroup.x=stag.width;
+				dadGroup.x=1920;
 			case "back":
-				dadGroup.x=-2*stag.width;
+				dadGroup.x=3000;
 		}
 	}
 
@@ -203,7 +358,7 @@ class Fog extends BaseStage
 			poop="right";
 		else if(opf==(plf+3)%4)
 			poop="left";
-		else
+		else if(opf==(plf+2)%4)
 			poop="back";
 		try{
 			switch (poop){
@@ -238,21 +393,21 @@ class Fog extends BaseStage
 		trace('reset bg');
 		
 		stag.x=0;
-		stagl.x=stag.x-stag.width;
-		stagr.x=stag.x+stag.width;
+		stagl.x=stag.x-1920;
+		stagr.x=stag.x+1920;
 		foggy.x=0;
-		foggyl.x=foggy.x-foggy.width;
-		foggyr.x=foggy.x+foggy.width;
+		foggyl.x=foggy.x-1920;
+		foggyr.x=foggy.x+1920;
 		canTurn=true;
-		
-		trace('bgs:');
-		trace(stagl.x);
-		trace(stag.x);
-		trace(stagr.x);
-		trace('fogs:');
-		trace(foggyl.x);
-		trace(foggy.x);
-		trace(foggyr.x);
+	}
+
+	public function resethands(tween:FlxTween) {
+		var newlx = random(lx-50, lx+50);
+		var newly = random(ly-50, ly+50);
+		var newrx = random(rx-50, rx+50);
+		var newry = random(ry-50, ry+50);
+		FlxTween.tween(lefthand, { x: newlx, y: newly }, 0.1, { ease: FlxEase.expoInOut });
+		FlxTween.tween(righthand, { x: newrx, y: newry }, 0.1, { ease: FlxEase.expoInOut });
 	}
 
 
@@ -290,6 +445,12 @@ class Fog extends BaseStage
 				rightvocs.play();
 				backvocs.play();
 				frontvocs.play();
+
+				var fuckme:Array<StrumNote> = game.opponentStrums.members;
+				FlxTween.tween(fuckme[0], {x: dadGroup.x+960-(2*105), y: 300}, 0.4, {ease: FlxEase.expoInOut});
+				FlxTween.tween(fuckme[1], {x: dadGroup.x+960-(1*105), y: 300}, 0.4, {ease: FlxEase.expoInOut});
+				FlxTween.tween(fuckme[2], {x: dadGroup.x+960+(1*105), y: 300}, 0.4, {ease: FlxEase.expoInOut});
+				FlxTween.tween(fuckme[3], {x: dadGroup.x+960+(2*105), y: 300}, 0.4, {ease: FlxEase.expoInOut});
 		}
 	}
 
@@ -301,15 +462,26 @@ class Fog extends BaseStage
 	{
 		// Code here
 	}
+
 	override function beatHit()
 	{
-		if(curBeat==96){
-			shit=1;
-		}
+		
+		
 	}
 	override function sectionHit()
-	{
-		//trace(poop);
+	{	
+		var SONG:SwagSong = Song.loadFromJson('fog', 'fog');
+		campointx=Std.int(camFollow.x);
+		campointy=Std.int(camFollow.y);
+		if(SONG.notes[curSection].mustHitSection){
+			defaultCamZoom=0.8;
+			bfturn=true;
+			camlock=false;
+		}else{
+			defaultCamZoom=1;
+			bfturn=false;
+			camlock=false;
+		}
 
 	}
 
@@ -342,15 +514,28 @@ class Fog extends BaseStage
 					case "spin":
 						if(value2=="a"){
 							opf=(plf+2)%4;
+							t3 = FlxTween.tween(dadGroup, {x:dadGroup.x-stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
+							t3.start();
 						} else {
 							opf=random(0,3);
+							switch(poop){
+								case "left":
+									t4=FlxTween.tween(dadGroup, {x:dadGroup.x-stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
+									t4.start();
+								case "right":
+									t5=FlxTween.tween(dadGroup, {x:dadGroup.x+stag.width}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
+									t5.start();
+								case "back":
+									t6=FlxTween.tween(dadGroup, {x:dadGroup.x-(2*stag.width)}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
+									t6.start();
+								default:
+									t7=FlxTween.tween(dadGroup, {x:stag.x}, 0.4, {ease:FlxEase.expoInOut, onComplete: checkDadLoc});
+									t7.start();
+
+							}
 						}
 					case "check":
 						if(opf!=plf){
-							frontvocs.fadeOut(0.5);
-							backvocs.fadeOut(0.5);
-							leftvocs.fadeOut(0.5);
-							rightvocs.fadeOut(0.5);
 							frontvocs.stop();
 							backvocs.stop();
 							leftvocs.stop();
@@ -361,6 +546,24 @@ class Fog extends BaseStage
 							game.health=0;
 						}
 				}
+			case "behind":
+				behind.alpha=1;
+				FlxTween.tween(behind, {alpha: 0}, 1, {ease: FlxEase.circInOut});
+			case "you":
+				you.alpha=1;
+				FlxTween.tween(you, {alpha: 0}, 1, {ease: FlxEase.expoInOut});
+			case "turn":
+				turn.alpha=1;
+				FlxTween.tween(turn, {alpha: 0}, 1, {ease: FlxEase.circInOut});
+			case "around":
+				around.alpha=1;
+				FlxTween.tween(around, {alpha: 0}, 1, {ease: FlxEase.expoInOut});
+			case "tint":
+				if(value2!=null){
+					//game.camGame.filters.push(new ShaderFilter(new OverlayShader()));
+					game.initLuaShader('game.camGame', 'tint');
+				}
+
 		}
 	}
 	override function eventPushed(event:objects.Note.EventNote)

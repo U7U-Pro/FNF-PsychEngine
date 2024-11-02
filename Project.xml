@@ -60,24 +60,21 @@
 	<define name="CRASH_HANDLER" if="desktop release" />
 
 	<!-- Assets -->
-	<assets path="assets/fonts" />
-	<assets path="assets/shared"        exclude="*.ogg" if="web"/>
-	<assets path="assets/shared"        exclude="*.mp3" unless="web"/>
-	<assets path="assets/videos"        library="videos"        if="VIDEOS_ALLOWED"/>
-	<assets path="assets/songs"         library="songs"         exclude="*.ogg" if="web"/>
-	<assets path="assets/songs"         library="songs"         exclude="*.mp3" unless="web"/>
-	<assets path="assets/week_assets"   library="week_assets"   rename="assets" exclude="*.ogg" if="web"/>
-	<assets path="assets/week_assets"   library="week_assets"   rename="assets" exclude="*.mp3" unless="web"/>
+	<assets path="assets/fonts" embed="true"/>
+	<assets path="assets/shared" embed="true"      exclude="*.ogg" if="web"/>
+	<assets path="assets/shared" embed="true"      exclude="*.mp3" unless="web"/>
+	<assets path="assets/videos" embed="true"      library="videos"        if="VIDEOS_ALLOWED"/>
+	<assets path="assets/songs"  embed="true"      library="songs"         exclude="*.ogg" if="web"/>
+	<assets path="assets/songs"  embed="true"      library="songs"         exclude="*.mp3" unless="web"/>
+	<assets path="assets/week_assets" embed="true" library="week_assets"   rename="assets" exclude="*.ogg" if="web"/>
+	<assets path="assets/week_assets" embed="true" library="week_assets"   rename="assets" exclude="*.mp3" unless="web"/>
 
 	<library name="videos"        preload="true" if="VIDEOS_ALLOWED"/>
 	<library name="songs"         preload="true" />
-	<library name="week_assets"   preload="true" />
+	<library name="shared"   preload="true" />
 
 	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
 
-	<section if="MODS_ALLOWED">
-		<assets path='example_mods' rename='mods' embed='false'/>
-	</section>
 	<assets path='art/readme.txt' rename='READ BEFORE PLAYING.txt' />
 
 	<!-- _______________________________ Libraries ______________________________ -->

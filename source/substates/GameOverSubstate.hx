@@ -1,5 +1,6 @@
 package substates;
 
+import lime.system.System;
 import states.MainMenuState;
 import backend.WeekData;
 
@@ -13,12 +14,14 @@ import states.FreeplayState;
 class GameOverSubstate extends MusicBeatSubstate
 {
 	public var boyfriend:Character;
+	var text:FlxText= new FlxText(0,0,50,"You broke your neck and died lol",10);
 	var camFollow:FlxObject;
 	var moveCamera:Bool = false;
 	var playingDeathSound:Bool = false;
 
 	var stageSuffix:String = "";
 
+	var isOver:Bool = false;
 	public static var characterName:String = 'choke';
 	public static var deathSoundName:String = 'choke';
 	public static var loopSoundName:String = 'gameOver';
@@ -50,10 +53,20 @@ class GameOverSubstate extends MusicBeatSubstate
 		FlxG.sound.music.stop();
 		FlxG.sound.list.killMembers();
 		Conductor.songPosition = 0;
-
+		if(characterName=="endsong"){
+			characterName="choke";
+			isOver=true;
+		}
 		boyfriend = new Character(0, 0, characterName, true);
 		boyfriend.screenCenter(XY);
 		add(boyfriend);
+
+		if(characterName=="brokenneck"){
+			
+			text.screenCenter(XY);
+			add(text);
+		}
+		
 
 		FlxG.sound.play(Paths.sound(deathSoundName));
 		FlxG.camera.scroll.set();
@@ -62,7 +75,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		boyfriend.playAnim('firstDeath');
 
 		camFollow = new FlxObject(0, 0, 1, 1);
-		camFollow.setPosition(boyfriend.getGraphicMidpoint().x + boyfriend.cameraPosition[0], boyfriend.getGraphicMidpoint().y + boyfriend.cameraPosition[1]);
+		camFollow.setPosition(boyfriend.getGraphicMidpoint().x, boyfriend.getGraphicMidpoint().y);
 		FlxG.camera.focusOn(new FlxPoint(FlxG.camera.scroll.x + (FlxG.camera.width / 2), FlxG.camera.scroll.y + (FlxG.camera.height / 2)));
 		add(camFollow);
 		
@@ -102,6 +115,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (boyfriend.animation.curAnim != null)
 		{
 			if (boyfriend.animation.curAnim.name == 'firstDeath' && boyfriend.animation.curAnim.finished && startedDeath)
+				if(isOver){System.exit(0);}
 				boyfriend.playAnim('deathLoop');
 
 			if(boyfriend.animation.curAnim.name == 'firstDeath')
@@ -154,6 +168,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (!isEnding)
 		{
 			isEnding = true;
+			text.alpha=0;
 			boyfriend.playAnim('deathConfirm', true);
 			FlxG.sound.music.stop();
 			FlxG.sound.play(Paths.music(endSoundName));

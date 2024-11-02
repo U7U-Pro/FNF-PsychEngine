@@ -101,6 +101,8 @@ class MainMenuState extends MusicBeatState
 		}
 		FlxG.sound.playMusic(Paths.music('menu'));
 
+		
+
 		super.create();
 	}
 
@@ -138,13 +140,6 @@ class MainMenuState extends MusicBeatState
 				}				
 				
 			}
-			#if desktop
-			if (controls.justPressed('debug_1'))
-			{
-				selectedSomethin = true;
-				MusicBeatState.switchState(new MasterEditorMenu());
-			}
-			#end
 		}
 		
 
